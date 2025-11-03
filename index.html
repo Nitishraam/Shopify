@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a style="color: rgb(208, 176, 13)" href="#">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="./Pages/home2.html">Home2</a>
+                </div>
+              </li>
+              <li><a href="./Pages/about.html">About</a></li>
+              <li><a href="./Pages/service.html">Service</a></li>
+              <li><a href="./Pages/blog.html">Blogs</a></li>
+              <li><a href="./Pages/contact.html">Contact</a></li>
+              <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./index.html" style="display: flex; align-items: center">
+            <img src="./Images/logo.png" alt="" />
+          </a>
+          <a class="login2" href="./Pages/login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav  data-aos="zoom-out">
+      <div class="main-menu">
+        <a href="./index.html" style="display: flex; align-items: center">
+          <img src="./Images/logo.png" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a style="color: rgb(208, 176, 13)" href="#">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="./Pages/home2.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home2</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./Pages/about.html">About</a></li>
+            <li><a href="./Pages/service.html">Service</a></li>
+            <li><a href="./Pages/blog.html">Blogs</a></li>
+            <li><a href="./Pages/contact.html">Contact</a></li>
+            <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./Pages/login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div>
+      <swiper-container
+        class="mySwiper"
+        navigation="true"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="3500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide>
+          <section class="hero">
+            <div class="hero-content">
+              <p data-aos="zoom-in-right" class="subtitle">2025 Casual daily styles</p>
+              <h1 data-aos="zoom-in-right" class="h1">Summer<br />collection</h1>
+              <button  data-aos="zoom-in-right" class="btn">Search More →</button>
+              
+            </div>
+            <div class="hero-image">
+              <img
+                src="https://mb-demo1.myshopify.com/cdn/shop/files/slider-fashion-1.jpg?v=1742201859&width=3840"
+                alt="Model wearing summer clothes"
+              />
+              <!-- <h2 class="trend-text">trend</h2> -->
+            </div>
+          </section>
+        </swiper-slide>
+        <swiper-slide>
+           <section class="hero">
+            <div class="hero-content">
+              <p data-aos="zoom-in-right" class="subtitle"> Limited time offer</p>
+              <h1 data-aos="zoom-in-right" class="h1">Designed<br />collection</h1>
+              <button data-aos="zoom-in-right" class="btn">Search More →</button>
+              
+            </div>
+            <div class="hero-image">
+              <img
+                src="https://mb-demo1.myshopify.com/cdn/shop/files/slider-fashion-2.jpg?v=1742208725&width=3840"
+                alt="Model wearing summer clothes"
+              />
+              <!-- <h2 class="trend-text">trend</h2> -->
+            </div>
+          </section>
+        </swiper-slide>
+        <swiper-slide>
+          <section class="hero">
+            <div class="hero-content">
+              <p data-aos="zoom-in-right" class="subtitle">Off all new arrivals</p>
+              <h1 data-aos="zoom-in-right" class="h1">Definition<br />collection</h1>
+              <button data-aos="zoom-in-right" class="btn">Search More →</button>
+            </div>
+            <div class="hero-image">
+              <img
+                src="https://mb-demo1.myshopify.com/cdn/shop/files/slider-fashion-3.jpg?v=1742274424&width=3840"
+                alt="Model wearing summer clothes"
+              />
+              <!-- <h2 class="trend-text">trend</h2> -->
+            </div>
+          </section>
+        </swiper-slide>
+      </swiper-container>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </div>
+      <div id="client" class="slider">
+    
+      <div class="slide-track">
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-money-bill"></i>Best Price Guranted</h3>         
+        </div>
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-headphones"></i>Online support 24 hr and 7 days</h3>         
+        </div>
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-truck-fast"></i>Free shipping orders over $100</h3>         
+        </div>
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-rotate-left"></i>Free returns within 30 days</h3>         
+        </div>
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-shield-halved"></i>100% Secure payment online</h3>         
+        </div>
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-money-bill"></i>Best Price Guranted</h3>         
+        </div>
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-headphones"></i>Online support 24 hr and 7 days</h3>         
+        </div>
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-truck-fast"></i>Free shipping orders over $100</h3>         
+        </div>
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-rotate-left"></i>Free returns within 30 days</h3>         
+        </div>
+        <div class="slide">
+          <h3 class="blue"><i class="fa-solid fa-shield-halved"></i>100% Secure payment online</h3>         
+        </div>
+       
+      </div>
+    </div>
+
+    <section class="categories">
+    <h2 data-aos="fade-up">Product Categories</h2>
+    <div class="category-container">
+      
+      <div class="category-box">
+        <img  data-aos="flip-up" src="https://i.pinimg.com/736x/28/2c/3f/282c3f99ac594dff027fd38781a8a71a.jpg" alt="Men">
+        <h3  data-aos="fade-up">MEN</h3>
+      </div>
+
+      <div class="category-box">
+        <img  data-aos="flip-up" src="https://demo-alukas.myshopify.com/cdn/shop/files/2_fc7081bc-5f29-4b46-98ad-a50de2ba6649.jpg?v=1712566308&width=940" alt="Women">
+        <h3  data-aos="fade-up">WOMEN</h3>
+      </div>
+
+      <div class="category-box">
+        <img  data-aos="flip-up" src="https://i.pinimg.com/originals/55/e0/30/55e030e00c66fd26fbf34019e80dcd28.jpg" alt="Kids">
+        <h3  data-aos="fade-up">KIDS</h3>
+      </div>
+
+      <div class="category-box">
+        <img  data-aos="flip-up" src="https://getwallpapers.com/wallpaper/full/8/e/6/1419894-gorgerous-nike-shoes-wallpaper-2880x1800-for-mobile.jpg" alt="Shoes">
+        <h3  data-aos="fade-up">SHOES</h3>
+      </div>
+
+      <div class="category-box">
+        <img  data-aos="flip-up" src="https://tse2.mm.bing.net/th/id/OIP.DqVzU35a5apBk8kQnHZ_MwHaEJ?pid=Api&P=0&h=180" alt="Bags">
+        <h3  data-aos="fade-up">BAGS</h3>
+      </div>
+
+      <div class="category-box">
+        <img  data-aos="flip-up" src="https://as2.ftcdn.net/v2/jpg/03/64/41/07/1000_F_364410753_6bqjhBadqWM8Do6BCMA7J3q7EmgqgZHd.jpg" alt="Accessories">
+        <h3  data-aos="fade-up">ACCESSORIES</h3>
+      </div>
+
+    </div>
+  </section>
+
+   <section class="best-selling">
+    <h2  data-aos="fade-up">Best Selling</h2>
+
+    <div class="product-grid">
+
+      <!-- Product Card -->
+      <div data-aos="flip-left" class="product-card">
+        <div class="image-container">
+          <img  data-aos="zoom-in" src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-fashion-product-09-b_6a477b2a-1472-4b75-8a6e-e7e3813327b9.jpg?v=1706517611" class="main-img" alt="Men Formal T-shirt">
+          <img  src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-fashion-product-09-c_12017c02-20a1-41ff-b16d-49969ddcb809.jpg?v=1706517611" class="hover-img" alt="Men Formal T-shirt Hover">
+          <div class="icons">
+            <button  data-aos="fade-up" class="icon-btn">❤️</button>
+            <button   data-aos="fade-up" class="icon-btn">🛒</button>
+          </div>
+        </div>
+        <h3 data-aos="fade-up">W. Men Formal T-shirt</h3>
+        <p data-aos="fade-up" class="price">Rs.450.00</p>
+        <div data-aos="fade-up" class="sizes">
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+      </div>
+
+      <div  data-aos="flip-left"  class="product-card">
+        <div class="image-container">
+          <img data-aos="zoom-in" src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-07_b45fa59b-c020-4410-94ab-42e4c35c0499.jpg?v=1707801524&width=720"  class="main-img" alt="Blue Shoes">
+          <img src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-07-b_812174e7-d82b-4c16-947b-b1f1d9b3210b.jpg?v=1706520970&width=300"  class="hover-img" alt="Blue Shoes Hover">
+          <div class="icons">
+            <button class="icon-btn">❤️</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+        <h3 data-aos="fade-up">B. Pair of Shoes</h3>
+        <p data-aos="fade-up" class="price">RS.960.00</p>
+        <div data-aos="fade-up" class="sizes">
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+      </div>
+
+      <div  data-aos="flip-left"  class="product-card">
+        <div class="image-container">
+          <img data-aos="zoom-in" src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-04-a.jpg?v=1706520663&width=300" class="main-img" alt="Smart Watch">
+          <img  src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-04.jpg?v=1706520663&width=300" class="hover-img" alt="Smart Watch Hover">
+          <div class="icons">
+            <button class="icon-btn">❤️</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+        <h3 data-aos="fade-up">F. Ultimate Smart Watch</h3>
+        <p data-aos="fade-up" class="price">RS.570.00</p>
+        <div data-aos="fade-up" class="sizes">
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+      </div>
+
+      <div  data-aos="flip-left"  class="product-card">
+        <div class="image-container">
+          <img data-aos="zoom-in" src="https://mb-demo1.myshopify.com/cdn/shop/files/fashion-pro-77.jpg?v=1742963500&width=300" class="main-img" alt="Mokmol Jacket">
+          <img src="https://mb-demo1.myshopify.com/cdn/shop/files/fashion-pro-78.jpg?v=1742963500&width=300" class="hover-img" alt="Mokmol Jacket Hover">
+          <div class="icons">
+
+            <button class="icon-btn">❤️</button>
+            <button class="icon-btn">🛒</button>
+          </div>
+        </div>
+        <h3 data-aos="fade-up">S. Mokmol Jacket</h3>
+        <p data-aos="fade-up" class="price">RS.740.00</p>
+        <div data-aos="fade-up" class="sizes">
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <div  data-aos="fade-up"  style="margin-top: 70px;width: 100%;text-align: center;  background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;">
+      <h1>Now on Trend</h1>
+    </div>
+  <section class="container">
+  
+    <div  data-aos="zoom-in"  class="left-section">
+      <div class="image-box">
+        <img src="https://mb-demo1.myshopify.com/cdn/shop/files/fashion-look-book-banner.jpg?v=1742215077&width=832" alt="Model wearing jacket" class="main-img">
+        <div class="overlay-buttons">
+          <button class="like-btn">♥</button>
+          <button class="cart-btn">🛒</button>
+        </div>
+      </div>
+      <p class="vertical-text">trendy looks</p>
+    </div>
+
+    <div  data-aos="flip-left"  class="right-section">
+      <div class="product-card">
+        <div class="img-wrapper">
+          <img src="https://mb-demo1.myshopify.com/cdn/shop/files/fashion-pro-76.jpg?v=1742963500&width=720" alt="Collared Jacket" class="product-img main">
+          <img src="https://mb-demo1.myshopify.com/cdn/shop/files/fashion-pro-80.jpg?v=1742963500&width=300" alt="Collared Jacket Hover" class="product-img hover">
+          <!-- <span class="new-item">New item</span> -->
+        </div>
+        <h2 class="product-name">Collared jacket</h2>
+        <div class="price">
+          <span class="new-price">Rs. 2,000.00</span>
+          <span class="old-price">Rs. 5,500.00</span>
+        </div>
+        <div class="sizes">
+          <button>M</button>
+          <button>L</button>
+          <button>XL</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <section class="blog-section">
+    <h2  data-aos="fade-up"  class="section-title">Latest Blog</h2>
+
+    <div class="blog-container">
+      <div  data-aos="flip-left"  class="blog-card">
+        <img  data-aos="zoom-in"  src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/blog-1.jpg" alt="Blog 1">
+        <div class="blog-info">
+          <p  data-aos="fade-up"  class="date"><i class="far fa-calendar"></i> January 19, 2025</p>
+          <h3  data-aos="fade-up"  class="blog-title">
+            A Glimpse into Men,s Fashion Trends: What's Hot and What's Not
+          </h3>
+          <a  data-aos="fade-up"  href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div  data-aos="flip-left" class="blog-card">
+        <img  data-aos="zoom-in"   src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/blog-2.jpg" alt="Blog 2">
+        <div class="blog-info">
+          <p  data-aos="fade-up"  class="date"><i class="far fa-calendar"></i> January 19, 2025</p>
+          <h3  data-aos="fade-up"  class="blog-title">
+            Decoding Men's Style: What's Trending and What's Fading
+          </h3>
+          <a  data-aos="fade-up"  href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+
+      <div  data-aos="flip-left"  class="blog-card">
+        <img  data-aos="zoom-in"  src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/blog-3.jpg" alt="Blog 3">
+        <div class="blog-info">
+          <p  data-aos="fade-up"  class="date"><i class="far fa-calendar"></i> January 19, 2025</p>
+          <h3  data-aos="fade-up"  class="blog-title">
+            Elevating Your Awesome Look: Men's Fashion Hits and Misses The World
+          </h3>
+          <a  data-aos="fade-up"  href="#" class="read-more">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="features">
+      <div  data-aos="zoom-in"  class="feature-item">
+        <i class="fas fa-truck"></i>
+        <h4>Free Shipping</h4>
+        <p>On orders over <strong>$99</strong>.</p>
+      </div>
+
+      <div  data-aos="zoom-in" class="feature-item">
+        <i class="fas fa-money-bill-wave"></i>
+        <h4>Money Back</h4>
+        <p>Money back in 15 days.</p>
+      </div>
+
+      <div  data-aos="zoom-in" class="feature-item">
+        <i class="fas fa-credit-card"></i>
+        <h4>Secure Checkout</h4>
+        <p>100% Payment Secure.</p>
+      </div>
+
+      <div  data-aos="zoom-in" class="feature-item">
+        <i class="fas fa-headset"></i>
+        <h4>Online Support</h4>
+        <p>Ensure the product quality.</p>
+      </div>
+    </div>
+  </section>
+
+   <footer  data-aos="zoom-in" class="footer">
+    <div class="footer-container">
+      
+      <!-- About Us -->
+      <div class="footer-section about">
+        <h3>About Us.</h3>
+        <p>
+          Minimal E-Commerce is a dynamic and innovative online retail platform that offers a wide range of products to customers worldwide.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <p class="safe-checkout">Guaranteed safe checkout</p>
+        <div class="payment-icons">
+          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__1.svg" alt="Amazon Pay">
+          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__4.svg" alt="Apple Pay">
+          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__4.svg" alt="Google Pay">
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section links">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Information -->
+      <div class="footer-section links">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Beauty</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Jewelry</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-section newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
+        <form>
+          <input type="email" placeholder="info@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+ <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+
+     
+
+  </body>
+</html>
