@@ -31,6 +31,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+
   </head>
   <body>
     <div class="mb">
@@ -61,11 +70,11 @@
                   <a href="./Pages/home2.html">Home2</a>
                 </div>
               </li>
-              <li><a href="./Pages/about.html">About</a></li>
-              <li><a href="./Pages/service.html">Service</a></li>
-              <li><a href="./Pages/blog.html">Blogs</a></li>
-              <li><a href="./Pages/contact.html">Contact</a></li>
-              <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+              <li><a href="./Pages/error.html">About</a></li>
+              <li><a href="./Pages/error.html">Service</a></li>
+              <li><a href="./Pages/error.html">Blogs</a></li>
+              <li><a href="./Pages/error.html">Contact</a></li>
+              <li><a href="./Pages/error.html">Dashboard</a></li>
             </ul>
           </div>
         </div>
@@ -73,13 +82,13 @@
           <a href="./index.html" style="display: flex; align-items: center">
             <img src="./Images/logo.png" alt="" />
           </a>
-          <a class="login2" href="./Pages/login.html"
+          <a class="login2" href="./Pages/error.html"
             ><i class="fa-solid fa-user"></i>Log in</a
           >
         </div>
       </div>
     </div>
-    <nav  data-aos="zoom-out">
+    <nav id="nav"  data-aos="zoom-out">
       <div class="main-menu">
         <a href="./index.html" style="display: flex; align-items: center">
           <img src="./Images/logo.png" alt="" />
@@ -88,7 +97,7 @@
           <ul class="menu-list2">
             <div style="position: relative">
               <li>
-                <a style="color: rgb(208, 176, 13)" href="#">Home</a
+                <a style="color: rgb(189, 160, 16)" href="#">Home</a
                 ><i
                   onclick="menu3.hidden^=1"
                   class="fa-solid fa-caret-down"
@@ -97,7 +106,7 @@
                   style="position: absolute; top: 25px; background-color: white"
                 >
                   <a
-                    href="./Pages/home2.html"
+                    href="./Pages/error.html"
                     style="
                       background-color: white;
                       border: 1px solid black;
@@ -110,14 +119,14 @@
                 </div>
               </li>
             </div>
-            <li><a href="./Pages/about.html">About</a></li>
-            <li><a href="./Pages/service.html">Service</a></li>
-            <li><a href="./Pages/blog.html">Blogs</a></li>
-            <li><a href="./Pages/contact.html">Contact</a></li>
-            <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+            <li><a href="./Pages/error.html">About</a></li>
+            <li><a href="./Pages/error.html">Service</a></li>
+            <li><a href="./Pages/error.html">Blogs</a></li>
+            <li><a href="./Pages/error.html">Contact</a></li>
+            <li><a href="./Pages/error.html">Dashboard</a></li>
           </ul>
 
-          <a class="login" href="./Pages/login.html"
+          <a class="login" href="./Pages/error.html"
             ><i class="fa-solid fa-user"></i>Log in</a
           >
         </div>
@@ -137,7 +146,7 @@
             <div class="hero-content">
               <p data-aos="zoom-in-right" class="subtitle">2025 Casual daily styles</p>
               <h1 data-aos="zoom-in-right" class="h1">Summer<br />collection</h1>
-              <button  data-aos="zoom-in-right" class="btn">Search More →</button>
+              <a href="./Pages/error.html"  data-aos="zoom-in-right" class="btn">Search More →</a>
               
             </div>
             <div class="hero-image">
@@ -154,7 +163,7 @@
             <div class="hero-content">
               <p data-aos="zoom-in-right" class="subtitle"> Limited time offer</p>
               <h1 data-aos="zoom-in-right" class="h1">Designed<br />collection</h1>
-              <button data-aos="zoom-in-right" class="btn">Search More →</button>
+              <a href="./Pages/error.html" data-aos="zoom-in-right" class="btn">Search More →</a>
               
             </div>
             <div class="hero-image">
@@ -171,7 +180,7 @@
             <div class="hero-content">
               <p data-aos="zoom-in-right" class="subtitle">Off all new arrivals</p>
               <h1 data-aos="zoom-in-right" class="h1">Definition<br />collection</h1>
-              <button data-aos="zoom-in-right" class="btn">Search More →</button>
+              <a href="./Pages/error.html" data-aos="zoom-in-right" class="btn">Search More →</a>
             </div>
             <div class="hero-image">
               <img
@@ -266,7 +275,7 @@
     <div class="product-grid">
 
       <!-- Product Card -->
-      <div data-aos="flip-left" class="product-card">
+      <div id="p1" data-aos="flip-left" class="product-card">
         <div class="image-container">
           <img  data-aos="zoom-in" src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-fashion-product-09-b_6a477b2a-1472-4b75-8a6e-e7e3813327b9.jpg?v=1706517611" class="main-img" alt="Men Formal T-shirt">
           <img  src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-fashion-product-09-c_12017c02-20a1-41ff-b16d-49969ddcb809.jpg?v=1706517611" class="hover-img" alt="Men Formal T-shirt Hover">
@@ -277,14 +286,14 @@
         </div>
         <h3 data-aos="fade-up">W. Men Formal T-shirt</h3>
         <p data-aos="fade-up" class="price">Rs.450.00</p>
-        <div data-aos="fade-up" class="sizes">
+        <div data-aos="fade-up" class="sizess">
           <button>M</button>
           <button>L</button>
           <button>XL</button>
         </div>
       </div>
 
-      <div  data-aos="flip-left"  class="product-card">
+      <div id="p2"  data-aos="flip-left"  class="product-card">
         <div class="image-container">
           <img data-aos="zoom-in" src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-07_b45fa59b-c020-4410-94ab-42e4c35c0499.jpg?v=1707801524&width=720"  class="main-img" alt="Blue Shoes">
           <img src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-07-b_812174e7-d82b-4c16-947b-b1f1d9b3210b.jpg?v=1706520970&width=300"  class="hover-img" alt="Blue Shoes Hover">
@@ -295,14 +304,14 @@
         </div>
         <h3 data-aos="fade-up">B. Pair of Shoes</h3>
         <p data-aos="fade-up" class="price">RS.960.00</p>
-        <div data-aos="fade-up" class="sizes">
+        <div data-aos="fade-up" class="sizess">
           <button>M</button>
           <button>L</button>
           <button>XL</button>
         </div>
       </div>
 
-      <div  data-aos="flip-left"  class="product-card">
+      <div id="p3"  data-aos="flip-left"  class="product-card">
         <div class="image-container">
           <img data-aos="zoom-in" src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-04-a.jpg?v=1706520663&width=300" class="main-img" alt="Smart Watch">
           <img  src="https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-04.jpg?v=1706520663&width=300" class="hover-img" alt="Smart Watch Hover">
@@ -313,14 +322,14 @@
         </div>
         <h3 data-aos="fade-up">F. Ultimate Smart Watch</h3>
         <p data-aos="fade-up" class="price">RS.570.00</p>
-        <div data-aos="fade-up" class="sizes">
+        <div data-aos="fade-up" class="sizess">
           <button>M</button>
           <button>L</button>
           <button>XL</button>
         </div>
       </div>
 
-      <div  data-aos="flip-left"  class="product-card">
+      <div id="p4"  data-aos="flip-left"  class="product-card">
         <div class="image-container">
           <img data-aos="zoom-in" src="https://mb-demo1.myshopify.com/cdn/shop/files/fashion-pro-77.jpg?v=1742963500&width=300" class="main-img" alt="Mokmol Jacket">
           <img src="https://mb-demo1.myshopify.com/cdn/shop/files/fashion-pro-78.jpg?v=1742963500&width=300" class="hover-img" alt="Mokmol Jacket Hover">
@@ -332,7 +341,7 @@
         </div>
         <h3 data-aos="fade-up">S. Mokmol Jacket</h3>
         <p data-aos="fade-up" class="price">RS.740.00</p>
-        <div data-aos="fade-up" class="sizes">
+        <div data-aos="fade-up" class="sizess">
           <button>M</button>
           <button>L</button>
           <button>XL</button>
@@ -362,7 +371,7 @@
     </div>
 
     <div  data-aos="flip-left"  class="right-section">
-      <div class="product-card">
+      <div id="p5" class="product-card">
         <div class="img-wrapper">
           <img src="https://mb-demo1.myshopify.com/cdn/shop/files/fashion-pro-76.jpg?v=1742963500&width=720" alt="Collared Jacket" class="product-img main">
           <img src="https://mb-demo1.myshopify.com/cdn/shop/files/fashion-pro-80.jpg?v=1742963500&width=300" alt="Collared Jacket Hover" class="product-img hover">
@@ -387,7 +396,7 @@
     <h2  data-aos="fade-up"  class="section-title">Latest Blog</h2>
 
     <div class="blog-container">
-      <div  data-aos="flip-left"  class="blog-card">
+      <div  id="b1" data-aos="flip-left"  class="blog-card">
         <img  data-aos="zoom-in"  src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/blog-1.jpg" alt="Blog 1">
         <div class="blog-info">
           <p  data-aos="fade-up"  class="date"><i class="far fa-calendar"></i> January 19, 2025</p>
@@ -398,7 +407,7 @@
         </div>
       </div>
 
-      <div  data-aos="flip-left" class="blog-card">
+      <div id="b2" data-aos="flip-left" class="blog-card">
         <img  data-aos="zoom-in"   src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/blog-2.jpg" alt="Blog 2">
         <div class="blog-info">
           <p  data-aos="fade-up"  class="date"><i class="far fa-calendar"></i> January 19, 2025</p>
@@ -409,7 +418,7 @@
         </div>
       </div>
 
-      <div  data-aos="flip-left"  class="blog-card">
+      <div id="b3" data-aos="flip-left"  class="blog-card">
         <img  data-aos="zoom-in"  src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/blog-3.jpg" alt="Blog 3">
         <div class="blog-info">
           <p  data-aos="fade-up"  class="date"><i class="far fa-calendar"></i> January 19, 2025</p>
@@ -449,7 +458,7 @@
     </div>
   </section>
 
-   <footer  data-aos="zoom-in" class="footer">
+   <footer id="footer"  data-aos="zoom-in" class="footer">
     <div class="footer-container">
       
       <!-- About Us -->
@@ -460,11 +469,11 @@
         </p>
 
         <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="./Pages/error.html"><i class="fab fa-facebook-f"></i></a>
+          <a href="./Pages/error.html"><i class="fab fa-twitter"></i></a>
+          <a href="./Pages/error.html"><i class="fab fa-youtube"></i></a>
+          <a href="./Pages/error.html"><i class="fab fa-instagram"></i></a>
+          <a href="./Pages/error.html"><i class="fab fa-linkedin-in"></i></a>
         </div>
 
         <p class="safe-checkout">Guaranteed safe checkout</p>
@@ -479,11 +488,11 @@
       <div class="footer-section links">
         <h3>Quick Link</h3>
         <ul>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="./Pages/error.html">Products</a></li>
+          <li><a href="./Pages/error.html">Service</a></li>
+          <li><a href="./Pages/error.html">Contact</a></li>
+          <li><a href="./Pages/error.html">Blog</a></li>
+          <li><a href="./Pages/error.html">About</a></li>
         </ul>
       </div>
 
@@ -491,11 +500,11 @@
       <div class="footer-section links">
         <h3>Information</h3>
         <ul>
-          <li><a href="#">Fashion</a></li>
-          <li><a href="#">Beauty</a></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">Electronics</a></li>
-          <li><a href="#">Jewelry</a></li>
+          <li><a href="./Pages/error.html">Fashion</a></li>
+          <li><a href="./Pages/error.html">Beauty</a></li>
+          <li><a href="./Pages/error.html">Categories</a></li>
+          <li><a href="./Pages/error.html">Electronics</a></li>
+          <li><a href="./Pages/error.html">Jewelry</a></li>
         </ul>
       </div>
 
@@ -519,6 +528,135 @@
 
 
 
+<script>
+VANTA.WAVES({
+  el: "#p1",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x221d11
+})
+</script>
+<script>
+VANTA.WAVES({
+  el: "#p2",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x221d11
+})
+</script>
+<script>
+VANTA.WAVES({
+  el: "#p3",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x221d11
+})
+</script>
+<script>
+VANTA.WAVES({
+  el: "#p4",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x221d11
+})
+</script>
+<script>
+VANTA.WAVES({
+  el: "#p5",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x221d11
+})
+</script>
+<script>
+VANTA.WAVES({
+  el: "#b1",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x3d4859
+})
+</script>
+<script>
+VANTA.WAVES({
+  el: "#b2",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x3d4859
+})
+</script>
+<script>
+VANTA.WAVES({
+  el: "#b3",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x3d4859
+})
+</script>
+
+  <script>
+VANTA.DOTS({
+  el: "#client",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xd2c611,
+  showLines: false
+})
+</script>
+<script>
+VANTA.CLOUDS({
+  el: "#footer",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00
+})
+</script>
 
 
 

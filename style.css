@@ -194,6 +194,8 @@ swiper-slide img {
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: 0.3s;
+  color: black;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -393,6 +395,9 @@ swiper-slide img {
   border-radius: 10px;
   transition: opacity 0.4s ease;
 }
+.product-card h3{
+  color: rgb(161, 159, 9);
+}
 
 .image-container .hover-img {
   position: absolute;
@@ -447,23 +452,24 @@ swiper-slide img {
 }
 
 .price {
- background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
+ background: linear-gradient(to right, rgb(217, 193, 75), rgb(174, 145, 30));
   background-clip: text;
   color: transparent; 
   font-weight: 600;
   margin: 5px 0;
 }
 
-/* Sizes */
-.sizes {
+
+.sizess {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 8px;
 }
 
-.sizes button {
-  background: #f0f0f0;
+.sizess button {
+  color: bisque;
+  background: #000000;
   border: none;
   padding: 6px 10px;
   border-radius: 5px;
@@ -471,12 +477,13 @@ swiper-slide img {
   transition: all 0.3s ease;
 }
 
-.sizes button:hover {
+.sizess button:hover {
   background: #0055cc;
   color: #fff;
 }
 
 .container {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -618,6 +625,8 @@ swiper-slide img {
 .product-name {
   font-size: 1.3rem;
   margin-top: 1.2rem;
+    color: rgb(161, 159, 9);
+
 }
 
 .price {
@@ -626,6 +635,9 @@ swiper-slide img {
 
 .new-price {
   font-weight: 600;
+ background: linear-gradient(to right, rgb(217, 193, 73), rgb(155, 155, 28));
+  background-clip: text;
+  color: transparent; 
 }
 
 .old-price {
@@ -646,6 +658,7 @@ swiper-slide img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s ease;
+  color: bisque;
 }
 
 .sizes button:hover {
@@ -706,7 +719,7 @@ swiper-slide img {
 
 .blog-info .date {
   font-size: 0.9rem;
-  color: #666;
+  color: black;
   margin-bottom: 0.5rem;
 }
 
@@ -723,14 +736,14 @@ swiper-slide img {
 
 .read-more {
   font-size: 0.9rem;
-  color: #0066cc;
+  color: rgb(161, 159, 9);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .read-more:hover {
-  color: #004a99;
+  color: rgb(217, 193, 75);
 }
 
 /* FEATURES */
@@ -785,30 +798,30 @@ swiper-slide img {
 .footer-section {
   flex: 1;
   min-width: 230px;
+  
 }
 
 .footer-section h3 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  background: linear-gradient(to right, rgb(142, 123, 28), rgb(199, 172, 39));
+  background: linear-gradient(to right, rgb(164, 143, 36), rgb(143, 121, 12));
   background-clip: text;
   color: transparent;
 }
 
 .footer-section p {
   font-size: 0.9rem;
-  color: #555;
+color: black;
   line-height: 1.6;
 }
 
-/* SOCIAL ICONS */
 .social-icons {
   margin: 1rem 0;
 }
 
 .social-icons a {
-  color: #222;
+  color: rgb(219, 173, 87);
   font-size: 1rem;
   margin-right: 10px;
   text-decoration: none;
@@ -819,7 +832,6 @@ swiper-slide img {
   color: #007bff;
 }
 
-/* SAFE CHECKOUT */
 .safe-checkout {
   font-weight: 500;
   margin-top: 1rem;
@@ -835,7 +847,6 @@ swiper-slide img {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* LINKS */
 .footer-section ul {
   list-style: none;
 }
@@ -846,13 +857,13 @@ swiper-slide img {
 
 .footer-section ul li a {
   text-decoration: none;
-  color: #555;
+  color: black;
   font-size: 0.9rem;
   transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #007bff;
+  color: bisque;
 }
 
 /* NEWSLETTER */
