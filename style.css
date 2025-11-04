@@ -468,6 +468,7 @@ swiper-slide img {
   justify-content: center;
   gap: 10px;
   margin-top: 8px;
+  margin-bottom: 10px;
 }
 
 .sizess button {
@@ -484,7 +485,20 @@ swiper-slide img {
   background: #0055cc;
   color: #fff;
 }
-
+.cart{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: black;
+  color: bisque;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.cart:hover{
+  background-color: bisque;
+  color: black;
+}
 .container {
   width: 90%;
   display: flex;
@@ -500,7 +514,7 @@ swiper-slide img {
   position: relative;
   flex: 1;
   min-width: 300px;
-  height: 550px;
+  height: 700px;
 }
 
 .image-box {
@@ -651,11 +665,12 @@ swiper-slide img {
 
 .sizes {
   margin-top: 1rem;
+  margin-bottom: 10px;
 }
 
 .sizes button {
-  border: 1px solid #ccc;
-  background: none;
+  border: 1px solid black;
+  background: black;
   margin: 0 5px;
   padding: 5px 10px;
   border-radius: 5px;
@@ -665,8 +680,8 @@ swiper-slide img {
 }
 
 .sizes button:hover {
-  background: #222;
-  color: white;
+    background: #0055cc;
+  color: #fff;
 }
 
 
@@ -722,7 +737,7 @@ swiper-slide img {
 
 .blog-info .date {
   font-size: 0.9rem;
-  color: black;
+  color: #c7c8b5;
   margin-bottom: 0.5rem;
 }
 
@@ -808,7 +823,7 @@ swiper-slide img {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  background: linear-gradient(to right, rgb(164, 143, 36), rgb(143, 121, 12));
+  background: linear-gradient(to right, rgb(207, 179, 39), rgb(229, 198, 46));
   background-clip: text;
   color: transparent;
 }
@@ -868,7 +883,28 @@ color: black;
 .footer-section ul li a:hover {
   color: bisque;
 }
+.office-worldwide .map-container {
+  width: 100%;
+  height: auto;
 
+}
+.office-worldwide{
+  text-align: center;
+}
+.office-worldwide .map-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.footer-title{
+   background: linear-gradient(to right, rgb(164, 143, 36), rgb(252, 218, 47));
+  background-clip: text;
+  color: transparent;
+}
+.map1{
+  border-radius: 10px;
+  filter: brightness(70%);
+}
 /* NEWSLETTER */
 .newsletter form {
   margin-top: 1rem;
