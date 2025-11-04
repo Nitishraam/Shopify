@@ -296,6 +296,7 @@ swiper-slide img {
 }
 
 .categories h2 {
+  line-height: 40px;
   font-size: 2.5em;
   font-weight: 600;
   margin-bottom: 40px;
@@ -303,6 +304,7 @@ swiper-slide img {
   background-clip: text;
   color: transparent;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 
@@ -361,6 +363,7 @@ swiper-slide img {
   background-clip: text;
   color: transparent;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 .product-grid {
@@ -680,10 +683,10 @@ swiper-slide img {
     background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
   background-clip: text;
   color: transparent;
+  padding: 10px;
   text-transform: uppercase;
 }
 
-/* BLOG CARDS */
 .blog-container {
   display: flex;
   justify-content: center;
@@ -969,6 +972,9 @@ color: black;
   .office-worldwide .map-container {
     width: 75%;
   }
+  .vertical-text
+  {
+    display: none;
 }
 @media (max-width: 1130px) {
   .menu-list2 {
@@ -995,4 +1001,69 @@ color: black;
           align-items: center;
     font-size: 12px;
   }
+  .mb-logo{
+    gap: 30px;
+  }
 }
+@media (max-width: 320px) {
+  .container{
+    padding: 1rem;
+  }
+  .blog-section{
+    padding: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;         
+    padding: 30px 20px;
+    height: auto;
+    margin-top: 60px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+    order: 2;                      
+    margin-top: 20px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    order: 1;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .trend-text {
+    display: none; 
+  }
+
+  swiper-slide {
+    background: #dfe4dc; 
+  }
+  .feature-item{
+    flex: 1 1 125px;
+  }
+}}
