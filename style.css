@@ -836,6 +836,7 @@ swiper-slide img {
   font-size: 0.9rem;
 color: rgb(204, 188, 188);
   line-height: 1.6;
+  font-weight: 500;
 }
 
 .social-icons {
@@ -892,9 +893,11 @@ color: rgb(204, 188, 188);
   width: 100%;
   height: auto;
 
+
 }
 .office-worldwide{
   text-align: center;
+    margin-top: 10px;
 }
 .office-worldwide .map-container img {
   width: 100%;
@@ -908,7 +911,7 @@ color: rgb(204, 188, 188);
 }
 .map1{
   border-radius: 10px;
-  filter: brightness(70%);
+  filter: brightness(80%);
 }
 /* NEWSLETTER */
 .newsletter form {

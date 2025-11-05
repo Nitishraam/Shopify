@@ -737,7 +737,7 @@ color: rgb(204, 188, 188);
 }
 .map1{
   border-radius: 10px;
-  filter: brightness(70%);
+  filter: brightness(80%);
 }
 /* NEWSLETTER */
 .newsletter form {
@@ -789,18 +789,6 @@ color: rgb(204, 188, 188);
     align-items: flex-start;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
