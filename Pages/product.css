@@ -178,6 +178,754 @@ nav {
 }
 
 
+.product-container {
+  display: flex;
+  gap: 40px;
+  /* max-width: 1000px; */
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* Left side (image area) */
+.product-left {
+  flex: 1;
+}
+
+.main-image {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url('https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-05.jpg?v=1706520582');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Thumbnails */
+.thumbnail-row {
+    width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.thumbnail-row img {
+  width: 20%;
+  height: 100px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.thumbnail-row img:hover {
+  transform: scale(1.05);
+}
+
+/* Right side (details) */
+.product-right {
+  flex: 1;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.rating {
+  color: #ffa41c;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+.stock {
+  color: #1a8917;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Sale banner */
+.sale-banner {
+  background-color: #fdecec;
+  color: #d33;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Sizes */
+.size-section p {
+  font-weight: bold;
+}
+
+.sizes {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.sizes button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sizes button:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* Colors */
+.color-section p {
+  font-weight: bold;
+}
+
+.colors {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid #ddd;
+}
+
+.color.teal { background: #508d91; }
+.color.beige { background: #d6c8a1; }
+.color.mint { background: #97d5b0; }
+
+/* Quantity selector */
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.quantity input {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.add {
+  flex: 1;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buy {
+  flex: 1;
+  background: #c89e2b;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add:hover, .buy:hover {
+    background-color: bisque;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+  }
+}
+
+
+
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr; 
+  gap: 40px;
+  align-items: start;
+  margin-top: 100px;
+}
+
+.left .circle-image {
+  width: 280px;         
+  height: 280px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: url("https://img.freepik.com/premium-photo/plain-black-tshirt-cement-background-4k-hd-photo_1193781-21445.jpg?w=2000");
+  /* replace the URL above with your image path */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+}
+
+
+.right .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+
+.right h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 700;
+   background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
+  background-clip: text;
+  color: transparent;
+  padding: 4px;
+}
+
+.right h4.washing-title {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
+   background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
+  background-clip: text;
+  color: transparent;
+  padding: 3px;
+}
+
+/* spec paragraphs */
+.spec-text {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* smaller lines used under Wearing */
+.spec-text.small {
+  color: #777;
+  font-size: 13px;
+  margin: 6px 0;
+}
+
+/* washing instructions list */
+.washing-list {
+  list-style: none;
+  margin: 6px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.washing-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #444;
+  font-size: 14px;
+}
+
+/* icon color and spacing */
+.icon {
+  color: #444;
+  min-width: 18px;
+  min-height: 18px;
+  flex-shrink: 0;
+}
+
+/* subtle dividing line across full content area (optional) */
+.right {
+  padding-top: 6px;
+}
+
+@media (max-width: 880px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    display:flex;
+    justify-content: center;
+  }
+  .right .grid {
+    grid-template-columns: 1fr; 
+    gap: 26px;
+  }
+  .left .circle-image {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+
+
+.wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.left .circle-image2 {
+  width: 280px;
+  height: 280px;
+  margin: 8px 0 0 40px;
+  border-radius: 50%;
+  background-image: url('https://cdn.pixabay.com/photo/2024/04/29/04/21/tshirt-8726716_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* Right column header */
+.faq-title {
+  font-size: 32px;
+  margin-bottom: 12px;
+  font-weight: 700;
+   background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
+  background-clip: text;
+  color: transparent;
+  padding: 10px;
+}
+.faq-sub {
+  color: #777;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+/* FAQ styles (details/summary) */
+.faq details {
+  border-top: 1px solid #e9e9e9;
+  padding: 18px 0;
+}
+.faq details:last-child { border-bottom: 1px solid #e9e9e9; }
+
+/* Remove default marker and style summary */
+.faq summary {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  padding-right: 32px;
+  color: #111;
+  outline: none;
+}
+
+/* hide default triangle in some browsers */
+.faq summary::-webkit-details-marker { display: none; }
+
+/* custom arrow on the right */
+.faq summary::after {
+  content: "▾";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 180ms ease;
+  color: #777;
+  font-size: 16px;
+}
+
+/* rotate arrow when open */
+.faq details[open] > summary::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* answer paragraph — limit to two lines visually (but here we provide exactly two short lines) */
+.answer {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.55;
+  font-size: 14px;
+  /* allow the answer to wrap across two lines naturally; keep spacing comfortable */
+}
+
+/* small responsive tweak */
+@media (max-width: 880px) {
+  .wrap { grid-template-columns: 1fr; gap: 28px; }
+  .left .circle-image { margin-left: auto; margin-right: auto; }
+  .faq-title { text-align: left; }
+}
+
+
+.best-selling {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.best-selling h2 {
+  font-size: 2.3em;
+  font-weight: 600;
+  margin-bottom: 40px;
+  background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.product-card {
+  background: #fafafa;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: all 0.3s ease;
+  max-width: 350px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+}
+.product-card h3{
+  color: rgb(161, 159, 9);
+}
+
+.image-container .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.image-container:hover .hover-img {
+  opacity: 1;
+}
+
+.image-container:hover .main-img {
+  opacity: 0;
+}
+
+
+.icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .icons {
+  opacity: 1;
+}
+
+.icon-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.icon-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.product-card h3 {
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+.price {
+ background: linear-gradient(to right, rgb(217, 193, 75), rgb(174, 145, 30));
+  background-clip: text;
+  color: transparent; 
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+
+.sizess {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.sizess button {
+  color: bisque;
+  background: #000000;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sizess button:hover {
+  background: #0055cc;
+  color: #fff;
+}
+.cart{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: black;
+  color: bisque;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.cart:hover{
+  background-color: bisque;
+  color: black;
+}
+
+
+.footer {
+  background: #f1f1f1;
+  padding: 3rem 6% 1rem;
+  margin-top: 50px;
+  
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://img.freepik.com/premium-photo/abstract-rainbow-colorful-bright-feather-closeup-up-macro-view-background-plumage-texture-with-dew-drops_753134-644.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+
+.footer-section {
+  flex: 1;
+  min-width: 230px;
+  
+}
+
+.footer-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, rgb(207, 179, 39), rgb(229, 198, 46));
+  background-clip: text;
+  color: transparent;
+}
+
+.footer-section p {
+  font-size: 0.9rem;
+color: rgb(204, 188, 188);
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin: 1rem 0;
+}
+
+.social-icons a {
+  color: rgb(219, 173, 87);
+  font-size: 1rem;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+.safe-checkout {
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.payment-icons img {
+  height: 22px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2px 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: rgb(201, 194, 194);
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.footer-section ul li a:hover {
+  color: bisque;
+}
+.office-worldwide .map-container {
+  width: 100%;
+  height: auto;
+
+}
+.office-worldwide{
+  text-align: center;
+}
+.office-worldwide .map-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.footer-title{
+   background: linear-gradient(to right, rgb(164, 143, 36), rgb(252, 218, 47));
+  background-clip: text;
+  color: transparent;
+}
+.map1{
+  border-radius: 10px;
+  filter: brightness(80%);
+}
+/* NEWSLETTER */
+.newsletter form {
+  margin-top: 1rem;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.newsletter button {
+  width: 100%;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: #2563eb;
+}
+
+/* BOTTOM COPYRIGHT */
+.footer-bottom {
+  border-top: 1px solid #ddd;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #b9b3b3;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   nav {
     display: none;
