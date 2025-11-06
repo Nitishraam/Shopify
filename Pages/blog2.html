@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./blog2.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+</head>
+<body>
+      <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a  href="./home2.html">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="../index.html">Home1</a>
+                </div>
+              </li>
+              <li><a  href="./about2.html">Shop</a></li>
+              <li><a  href="./product2.html">Product</a></li>
+              <li><a style="color: rgb(208, 176, 13)"  href="./blog2.html">Blogs</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+              <li><a href="./dashboard2.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./home2.html" style="display: flex; align-items: center">
+            <img src="../Images/logo.png" alt="" />
+          </a>
+          <a class="login2" href="./error.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav id="nav" >
+      <div class="main-menu">
+        <a href="./home2.html" style="display: flex; align-items: center">
+          <img src="../Images/logo.png" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a   href="./home2.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="../index.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home1</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about2.html">Shop</a></li>
+            <li><a href="./product2.html">Product</a></li>
+            <li><a  style="color: rgb(189, 160, 16)"  href="./blog2.html">Blogs</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+
+      <div class="top-about">
+      <img
+        class="top-img"
+        src="https://img.freepik.com/free-photo/retro-living-room-interior-design_53876-145503.jpg"
+        alt=""
+      />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>BLOG</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>Blog</span></span>
+        </p>
+      </div>
+    </div>
+
+     <div class="wrap">
+    <h1 data-aos="fade-up" class="title">STORIES ABOUT HOW WE WORK</h1>
+
+    
+    <main class="grid" aria-live="polite">
+      <!-- Card 1 (use your screenshot image file path from /mnt/data) -->
+      <article class="card">
+        <a  data-aos="zoom-in" class="media" href="#" style="background-image: url('https://cozycorner-be87.kxcdn.com/cozycorner/wp-content/uploads/2025/03/blog-1-580x340.jpg');" aria-label="Transform your home: Scandinavian style"></a>
+        <div>
+          <div data-aos="fade-up" class="meta">
+            <span class="pill">April 2025</span>
+            <span class="author">Ralph Edwards</span>
+          </div>
+          <h3 data-aos="fade-up">Transform Your Home: Scandinavian Style Ideas with a Luxury Touch</h3>
+          <p data-aos="fade-up" class="excerpt muted">Revolutionized the woodworking industry.</p>
+         
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <a  data-aos="zoom-in" class="media" href="#" style="background-image: url('https://cozycorner-be87.kxcdn.com/cozycorner/wp-content/uploads/2025/03/blog-6-580x340.jpg');" aria-label="Modular kitchen"></a>
+        <div>
+          <div data-aos="fade-up" class="meta">
+            <span class="pill">April 2025</span>
+            <span class="author">Ralph Edwards</span>
+          </div>
+          <h3 data-aos="fade-up">Modular Kitchen Design In Calgary Canada – Roots Cabinet</h3>
+          <p  data-aos="fade-up" class="excerpt muted">Ebony, Sandalwood, Pupleheart or koa... We have it all!</p>
+        
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <a data-aos="zoom-in" class="media" href="#" style="background-image: url('https://cozycorner-be87.kxcdn.com/cozycorner/wp-content/uploads/2025/03/blog-5-580x340.jpg');" aria-label="Bohemian home office"></a>
+        <div>
+          <div data-aos="fade-up" class="meta">
+            <span class="pill">April 2025</span>
+            <span class="author">Ralph Edwards</span>
+          </div>
+          <h3 data-aos="fade-up">Create a Modern Bohemian Home Office with plants and geometric prints</h3>
+          <p data-aos="fade-up" class="excerpt muted">Be unique!</p>
+        
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <a data-aos="zoom-in" class="media" href="#" style="background-image: url('https://cozycorner-be87.kxcdn.com/cozycorner/wp-content/uploads/2025/03/blog-2-580x340.jpg');" aria-label="POP border designs"></a>
+        <div>
+          <div data-aos="fade-up" class="meta">
+            <span class="pill">April 2025</span>
+            <span class="author">Ralph Edwards</span>
+          </div>
+          <h3 data-aos="fade-up">POP Border Designs: The Unexpected Twist Your Home Interiors Need</h3>
+          <p data-aos="fade-up" class="excerpt muted">Revolutionized the woodworking industry.</p>
+          
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card">
+        <a data-aos="zoom-in" class="media" href="#" style="background-image: url('https://cozycorner-be87.kxcdn.com/cozycorner/wp-content/uploads/2025/03/blog-6-580x340.jpg');" aria-label="Stunning bed designs"></a>
+        <div>
+          <div data-aos="fade-up" class="meta">
+            <span class="pill">March 2025</span>
+            <span class="author">Ralph Edwards</span>
+          </div>
+          <h3 data-aos="fade-up">5 Stunning Bed Designs: Make a Cosy Bedroom Dreams Come Alive</h3>
+          <p data-aos="fade-up" class="excerpt muted">Ebony, Sandalwood, Purpleheart or koa... We have it all!</p>
+        
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="card">
+        <a data-aos="zoom-in" class="media" href="#" style="background-image: url('https://cozycorner-be87.kxcdn.com/cozycorner/wp-content/uploads/2025/03/blog-9-580x340.jpg');" aria-label="Style marries storage"></a>
+        <div>
+          <div data-aos="fade-up" class="meta">
+            <span class="pill">March 2025</span>
+            <span class="author">Ralph Edwards</span>
+          </div>
+          <h3 data-aos="fade-up">Style Marries Storage: 10 Stunning Living Room Almirah Designs</h3>
+          <p data-aos="fade-up" class="excerpt muted">Furniture is the soul of your home.</p>
+         
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+   <footer id="footer2"  data-aos="zoom-in" class="footer">
+    <div class="footer-container">
+      
+      <!-- About Us -->
+      <div class="footer-section about">
+        <h3>About Us.</h3>
+        <p>
+          Minimal E-Commerce is a dynamic and innovative online retail platform that offers a wide range of products to customers worldwide.
+        </p>
+
+        <div class="social-icons">
+          <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+          <a href="./error.html"><i class="fab fa-twitter"></i></a>
+          <a href="./error.html"><i class="fab fa-youtube"></i></a>
+          <a href="./error.html"><i class="fab fa-instagram"></i></a>
+          <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <p class="safe-checkout">Guaranteed safe checkout</p>
+        <div class="payment-icons">
+          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__1.svg" alt="Amazon Pay">
+          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__4.svg" alt="Apple Pay">
+          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__4.svg" alt="Google Pay">
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section links">
+        <h3>Quick Link</h3>
+        <ul>
+          <li><a href="./error.html">Products</a></li>
+          <li><a href="./error.html">Service</a></li>
+          <li><a href="./error.html">Contact</a></li>
+          <li><a href="./error.html">Blog</a></li>
+          <li><a href="./error.html">About</a></li>
+        </ul>
+      </div>
+
+      <!-- Information -->
+      <div class="footer-section links">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="./error.html">Fashion</a></li>
+          <li><a href="./error.html">Beauty</a></li>
+          <li><a href="./error.html">Categories</a></li>
+          <li><a href="./error.html">Electronics</a></li>
+          <li><a href="./error.html">Jewelry</a></li>
+        </ul>
+      </div>
+      
+
+      <!-- Newsletter -->
+      <div class="footer-section newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
+        <form >
+          <input type="email" placeholder="info@example.com" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+      <div class=" office-worldwide">
+          <h3 class="footer-title">Location</h3>
+
+          <div class="map-container">
+            <iframe class="map1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+              width="100%"
+              height="150"
+              style="border: 0,"
+              allowfullscreen=""
+              loading="lazy"
+              
+            >       
+            </iframe>
+          </div>
+        </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+       <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+</body>
+</html>
