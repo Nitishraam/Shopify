@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #6d03b4, #ad5d03);
+  background: linear-gradient(135deg, #d4c575, #ad8b03);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -106,14 +106,14 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(to right, #f27868, #df3721);
+  background: linear-gradient(135deg, #d4c575, #ad8b03);
   color: #fff;
 }
 
 .btn:hover {
   background: white;
-  color: blueviolet;
-  border: 1px solid blueviolet;
+   color: rgb(207, 175, 15);
+  border: 1px solid rgb(226, 217, 43);
 }
 
 .signup-text {
