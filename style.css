@@ -471,7 +471,7 @@ swiper-slide img {
   margin-bottom: 10px;
 }
 
-.sizess button {
+.sizess a {
   color: bisque;
   background: #000000;
   border: none;
@@ -479,9 +479,10 @@ swiper-slide img {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 
-.sizess button:hover {
+.sizess a:hover {
   background: #0055cc;
   color: #fff;
 }
@@ -670,7 +671,7 @@ swiper-slide img {
   margin-bottom: 10px;
 }
 
-.sizes button {
+.sizes a{
   border: 1px solid black;
   background: black;
   margin: 0 5px;
@@ -679,9 +680,10 @@ swiper-slide img {
   cursor: pointer;
   transition: 0.3s ease;
   color: bisque;
+  text-decoration: none;
 }
 
-.sizes button:hover {
+.sizes a:hover {
     background: #0055cc;
   color: #fff;
 }
