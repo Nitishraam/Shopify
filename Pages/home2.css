@@ -264,6 +264,7 @@ h2 {
  background-size: cover;
  background-repeat: no-repeat;
  color: goldenrod;
+ border: 1px solid black;
 }
 
 .offer-card.gray {
@@ -272,6 +273,8 @@ background-image: url("https://demothemesky-be87.kxcdn.com/cozycorner-simple/wp-
  background-size: cover;
  background-repeat: no-repeat;
  color: goldenrod;
+  border: 1px solid black;
+
 }
 
 .offer-card.blue {
@@ -280,6 +283,7 @@ background-image: url("https://demothemesky-be87.kxcdn.com/cozycorner-simple/wp-
  background-size: cover;
  background-repeat: no-repeat;
  color: goldenrod;
+ border: 1px solid black;
 
 }
 :root{
@@ -1120,5 +1124,14 @@ color: rgb(204, 188, 188);
   }
   .mb-logo{
     gap: 30px;
+  }
+  .image-box img{
+    height: 300px;
+  }
+  .left-section{
+    height: 300px;
+  }
+  .container{
+    gap: 20px;
   }
 }}

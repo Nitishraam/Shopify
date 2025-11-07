@@ -527,4 +527,13 @@ color: rgb(204, 188, 188);
   .mb-logo{
     gap: 30px;
   }
+  .banner{
+    flex-direction: column;
+  }
+  .contact-info{
+    margin-left: 30px;
+  }
+  .contact-form-section{
+    flex-direction: column;
+  }
 }}

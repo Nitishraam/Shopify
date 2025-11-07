@@ -269,7 +269,7 @@ body{
 /* Dashboard chart area */
 .card-header{
   display:flex;
-  justify-content:space-between;
+  justify-content:space-evenly;
   align-items:center;
   color: goldenrod;
   /* margin-bottom:12px; */
@@ -625,6 +625,9 @@ color: rgb(204, 188, 188);
   .mb-logo{
     gap: 30px;
   }
+  .bar-chart{
+    padding: 36px 8px;
+  }
 }}
 /* -------------------------
    Responsive tweaks (paste at end of CSS)
@@ -672,7 +675,7 @@ color: rgb(204, 188, 188);
   .dashboard-card h3 { font-size:15px; }
 
   /* compact bar chart */
-  .bar-chart { padding:20px 8px; gap:8px; }
+  .bar-chart { padding:36px 8px; gap:8px; }
   .bar-chart .ylabels{ display:none; } /* hide y labels to save space */
   .bar-chart .bars { gap:18px; height:130px; padding-left:6px; }
   .bar-chart .bar { width:22px; border-radius:6px; }

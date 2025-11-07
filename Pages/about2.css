@@ -392,9 +392,10 @@ nav {
 .product-card {
   position: relative;
   text-align: center;
-  background: #fff;
+  /* background: #fff; */
   border-radius: 10px;
   transition: transform 0.3s ease;
+  background-color: #cdc6be;  
 }
 
 .product-card:hover {
@@ -554,10 +555,11 @@ nav {
 
 .product-card {
   text-align: center;
-  background: #fff;
+  /* background: #fff; */
   border-radius: 10px;
   transition: transform 0.3s ease;
   padding: 10px;
+  background-color: #ededed;
 }
 
 .product-card:hover {
