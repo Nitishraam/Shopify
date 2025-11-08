@@ -197,7 +197,7 @@ nav {
   height: 450px;
   border-radius: 10px;
   background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-              url('https://mb-demo1.myshopify.com/cdn/shop/files/marbo-lyfestyle-product-05.jpg?v=1706520582');
+              url('../Images/sh4.webp');
   background-size: cover;
   background-position: center;
 }
@@ -401,7 +401,7 @@ nav {
   height: 280px;
   margin-top: 8px;
   border-radius: 50%;
-  background: url("https://img.freepik.com/premium-photo/plain-black-tshirt-cement-background-4k-hd-photo_1193781-21445.jpg?w=2000");
+  background: url("../Images/bt1.webp");
   /* replace the URL above with your image path */
   background-size: cover;
   background-position: center;
@@ -518,7 +518,7 @@ nav {
   height: 280px;
   margin: 8px 0 0 40px;
   border-radius: 50%;
-  background-image: url('https://cdn.pixabay.com/photo/2024/04/29/04/21/tshirt-8726716_1280.jpg');
+  background-image: url('../Images/wt1.webp');
   background-size: cover;
   background-position: center;
   box-shadow: 0 6px 20px rgba(0,0,0,0.06);
