@@ -1032,7 +1032,29 @@ color: rgb(204, 188, 188);
 .newsletter button:hover {
   background: #2563eb;
 }
+.btn {
+  width: 100%;
+  text-decoration: none;
+  padding: 8px 35px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: blue;
+  color: #fff;
+}
 
+.btn:hover {
+  background: white;
+   color: blue;
+  border: 1px solid blue;
+}
 /* BOTTOM COPYRIGHT */
 .footer-bottom {
   border-top: 1px solid #ddd;
