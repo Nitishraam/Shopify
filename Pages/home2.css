@@ -259,7 +259,7 @@ h2 {
 
 /* Backgrounds */
 .offer-card.pink {
-  background-image: url("https://demothemesky-be87.kxcdn.com/cozycorner-simple/wp-content/uploads/2024/12/055.png");
+  background-image: url("../Images/li1.webp");
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
@@ -268,7 +268,7 @@ h2 {
 }
 
 .offer-card.gray {
-background-image: url("https://demothemesky-be87.kxcdn.com/cozycorner-simple/wp-content/uploads/2024/12/057.png");
+background-image: url("../Images/mm1.webp");
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
@@ -278,7 +278,7 @@ background-image: url("https://demothemesky-be87.kxcdn.com/cozycorner-simple/wp-
 }
 
 .offer-card.blue {
- background-image: url("https://images2.alphacoders.com/647/thumb-1920-647567.jpg");
+ background-image: url("../Images/ch1.webp");
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
@@ -688,6 +688,7 @@ background-image: url("https://demothemesky-be87.kxcdn.com/cozycorner-simple/wp-
 
 .image-container img {
   width: 100%;
+  height: 300px;
   border-radius: 10px;
   transition: opacity 0.4s ease;
 }
