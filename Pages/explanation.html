@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="../Pages/explanation.css">
+</head>
+<body>
+              <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a  href="../index.html">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="./home2.html">Home2</a>
+                </div>
+              </li>
+              <li><a  href="./about.html">Shop</a></li>
+              <li><a  href="./product.html">Product</a></li>
+              <li><a style="color: rgb(208, 176, 13)" href="./blog.html">Blogs</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="../index.html" style="display: flex; align-items: center">
+            <img src="../Images/logo.png" alt="" />
+          </a>
+          <a class="login2" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav id="nav" >
+      <div class="main-menu">
+        <a href="../index.html" style="display: flex; align-items: center">
+          <img src="../Images/logo.png" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a  href="../index.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="./home2.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home2</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about.html">Shop</a></li>
+            <li><a href="./product.html">Product</a></li>
+            <li><a style="color: rgb(189, 160, 16)"  href="./blog.html">Blogs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+     <section class="explanations" aria-label="Explanations">
+      <article id="a1" class="explain">
+        <img class="ex-thumb" src="../Images/je1.webp" alt="A glimpse image">
+        <div>
+          <h2>A Glimpse into Fashion Trends: What’s Hot and What’s Not</h2>
+          <div class="meta-line">
+            <span class="label">January 19, 2025</span>
+            <span class="label">0 Comments</span>
+            <span class="label">Category: Trends</span>
+          </div>
+          <p class="summary">
+            This article surveys the major fashion trends right now — silhouettes, materials and colors that are rising
+            in popularity and those that are cooling off. It helps readers quickly identify what to try and what to skip.
+          </p>
+          <strong>Key takeaways:</strong>
+          <ul class="takeaways">
+            <li>Top trending items this season: relaxed tailoring, neutral palettes with a pop of color.</li>
+            <li>Passing trends: overly distressed denim and excessive logo-heavy pieces.</li>
+            <li>Quick styling tip: mix a classic tailored piece with a single modern accent (shoe or accessory).</li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="a2" class="explain">
+        <img class="ex-thumb" src="../Images/ms1.webp" alt="Decoding men's style">
+        <div>
+          <h2>Decoding Men’s Style: What’s Trending and What’s Fading</h2>
+          <div class="meta-line">
+            <span class="label">January 19, 2025</span>
+            <span class="label">0 Comments</span>
+            <span class="label">Category: Men’s Style</span>
+          </div>
+          <p class="summary">
+            A deeper look into menswear patterns and how mainstream menswear is shifting — from casualization to
+            more intentional details. Explains why some micro-trends catch on.
+          </p>
+          <strong>Key takeaways:</strong>
+          <ul class="takeaways">
+            <li>Fit matters: small changes to fit can modernize older pieces without replacing them.</li>
+            <li>Layering is back — learn to layer textures instead of heavy logos.</li>
+            <li>Shoe choices are influential — invest in well-made footwear.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="a3" class="explain">
+        <img class="ex-thumb" src="../Images/bl1.jpeg" alt="Elevate your look">
+        <div>
+          <h2>Elevating Your Awesome Look: Men’s Fashion Hits and Misses</h2>
+          <div class="meta-line">
+            <span class="label">January 19, 2025</span>
+            <span class="label">0 Comments</span>
+            <span class="label">Category: Styling</span>
+          </div>
+          <p class="summary">
+            A practical guide that shows small ways to elevate typical outfits — choosing textures, proper proportions,
+            and balancing statement vs neutral items.
+          </p>
+          <strong>Key takeaways:</strong>
+          <ul class="takeaways">
+            <li>Avoid mixing more than two bold elements in one outfit.</li>
+            <li>Neutral tones + one accent color is a safe, modern combination.</li>
+            <li>Proper tailoring creates an immediate upgrade.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Additional explanations (a4..a8) -->
+      <article id="a4" class="explain">
+        <img class="ex-thumb" src="../Images/bl2.webp" alt="Wardrobe essentials">
+        <div>
+          <h2>Men’s Wardrobe Essentials: Trends to Follow and Forget</h2>
+          <div class="meta-line">
+            <span class="label">January 19, 2025</span>
+            <span class="label">0 Comments</span>
+            <span class="label">Category: Essentials</span>
+          </div>
+          <p class="summary">
+            Lists classic essentials every man should own and highlights which trendy items are safe short-term buys
+            vs. long-term wardrobe investments.
+          </p>
+          <strong>Key takeaways:</strong>
+          <ul class="takeaways">
+            <li>Invest in tailored outerwear and neutral knitwear.</li>
+            <li>Be cautious with micro-trends — try them with inexpensive pieces first.</li>
+            <li>Quality over quantity: repair and tailor rather than discard.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="a5" class="explain">
+        <img class="ex-thumb" src="../Images/bl3.webp" alt="Style evolution">
+        <div>
+          <h2>Style Evolution: Men’s Fashion Wins and Fails This Season</h2>
+          <div class="meta-line">
+            <span class="label">January 19, 2025</span>
+            <span class="label">0 Comments</span>
+            <span class="label">Category: Seasonal</span>
+          </div>
+          <p class="summary">
+            Highlights what designers are doing well this season and what missed the mark — useful for shoppers and
+            aspiring designers.
+          </p>
+          <strong>Key takeaways:</strong>
+          <ul class="takeaways">
+            <li>Winners: clean silhouettes, improved fabric quality.</li>
+            <li>Fails: forced novelty that reduces wearability.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="a6" class="explain">
+        <img class="ex-thumb" src="../Images/bl4.webp" alt="Best fashion guide">
+        <div>
+          <h2>The Modern Man’s Best Fashion Guide: What’s In and What’s Out</h2>
+          <div class="meta-line">
+            <span class="label">January 19, 2025</span>
+            <span class="label">0 Comments</span>
+            <span class="label">Category: Guide</span>
+          </div>
+          <p class="summary">
+            A checklist to audit your closet and remove outdated staples while adding a few modern essentials.
+          </p>
+          <strong>Key takeaways:</strong>
+          <ul class="takeaways">
+            <li>Audit seasonally — donate or repurpose old items.</li>
+            <li>Add one quality statement piece per season.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="a7" class="explain">
+        <img class="ex-thumb" src="../Images/bl9.webp" alt="Fashion forecast">
+        <div>
+          <h2>Best Fashion Forecast for The Men: The Dos and Don’ts</h2>
+          <div class="meta-line">
+            <span class="label">January 19, 2025</span>
+            <span class="label">0 Comments</span>
+            <span class="label">Category: Forecast</span>
+          </div>
+          <p class="summary">
+            Forecasts what will be worn next season — helpful for retailers and fashion enthusiasts planning purchases.
+          </p>
+          <strong>Key takeaways:</strong>
+          <ul class="takeaways">
+            <li>Do invest in neutral core pieces; don’t overcommit to flashy micro-trends.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article id="a8" class="explain">
+        <img class="ex-thumb" src="../Images/bl6.webp" alt="Mastering the look">
+        <div>
+          <h2>Mastering the Look: Men’s Hot Picks and Passes For Fashion</h2>
+          <div class="meta-line">
+            <span class="label">January 19, 2025</span>
+            <span class="label">0 Comments</span>
+            <span class="label">Category: Picks</span>
+          </div>
+          <p class="summary">
+            Curated hot picks from this season and advice on what to avoid — with suggestions on how to mix new
+            pieces into an existing wardrobe.
+          </p>
+          <strong>Key takeaways:</strong>
+          <ul class="takeaways">
+            <li>Introduce new textures in small doses. Keep color palettes cohesive.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+    
+</body>
+</html>
