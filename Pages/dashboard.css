@@ -147,6 +147,7 @@ nav {
   height: 500px;
   color: white;
   filter: brightness(50%);
+  object-fit: cover;
   /* object-fit: contain; */
 }
 .overlay h1 {
