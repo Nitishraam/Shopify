@@ -490,6 +490,7 @@ nav {
 @media (max-width: 880px) {
   .container {
     grid-template-columns: 1fr;
+    padding: 10px;
   }
   .left {
     display:flex;
@@ -502,6 +503,9 @@ nav {
   .left .circle-image {
     width: 220px;
     height: 220px;
+  }
+  .right{
+    padding: 15px;
   }
 }
 
