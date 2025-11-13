@@ -1151,6 +1151,8 @@ color: rgb(204, 188, 188);
   }
   .container{
     gap: 50px;
+    padding: 20px;
+    margin: auto;
   }
   .right-section{
     margin-left: 25px;
