@@ -1141,3 +1141,18 @@ color: rgb(204, 188, 188);
     flex: 1 1 125px;
   }
 }}
+@media (max-width: 600px){
+  .image-box img{
+    height: 300px;
+  }
+  .left-section{
+    height: 300px;
+    margin-left: 15px;
+  }
+  .container{
+    gap: 50px;
+  }
+  .right-section{
+    margin-left: 25px;
+  }
+}

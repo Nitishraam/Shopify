@@ -559,3 +559,15 @@ color: rgb(204, 188, 188);
     flex-direction: column;
   }
 }}
+
+@media (max-width: 600px){
+  .form-box{
+    margin-left: 75px;
+  }
+  .contact-form-section{
+    gap: 20px;
+  }
+  .map-box{
+    margin-left: 30px;
+  }
+}

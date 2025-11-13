@@ -472,7 +472,7 @@ background-image: url("../Images/mm1.webp");
   position: relative;
   flex: 1;
   min-width: 300px;
-  height: 700px;
+  height: 600px;
 }
 
 .image-box {
@@ -486,8 +486,8 @@ background-image: url("../Images/mm1.webp");
   width: 100%;
   border-radius: 8px;
   transition: 0.4s ease;
-  height: 550px;
-  object-fit: contain;
+  height: 600px;
+  object-fit: fill;
 }
 
 /* .image-box:hover img {
@@ -1151,6 +1151,7 @@ color: rgb(204, 188, 188);
   }
   .image-box img{
     height: 300px;
+    
   }
   .left-section{
     height: 300px;
@@ -1159,3 +1160,14 @@ color: rgb(204, 188, 188);
     gap: 20px;
   }
 }}
+@media (max-width: 600px){
+  .container{
+    gap: 30px;
+  }
+  .featured{
+    padding: 10px;
+  }
+  .stories__grid{
+    padding: 10px;
+  }
+}
