@@ -443,6 +443,7 @@ swiper-slide img {
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s;
+  text-decoration: none;
 }
 
 .icon-btn:hover {

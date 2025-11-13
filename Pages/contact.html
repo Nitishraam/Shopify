@@ -162,19 +162,22 @@
     </section>
 
     <!-- Contact Form -->
-    <section class="contact-form-section">
-      <h3 data-aos="fade-up">Send Message</h3>
-      <form  data-aos="zoom-in" class="form" onsubmit="event.preventDefault(); alert('Form submitted (demo only)');">
-        <input type="text" placeholder="Enter your name" required>
-        <input type="email" placeholder="Enter email address" required>
-        <input type="text" placeholder="Enter phone number">
-        <input type="text" placeholder="Enter subject">
-        <textarea placeholder="Enter message" required></textarea>
-        <div class="submit-btn">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-    </section>
+   <section class="contact-form-section">
+  <h3 data-aos="fade-up">Send Message</h3>
+
+  <!-- Redirect to error page when submitted -->
+  <form data-aos="zoom-in" class="form" action="./error.html" method="GET">
+    <input type="text" placeholder="Enter your name" required>
+    <input type="email" placeholder="Enter email address" required>
+    <input type="text" placeholder="Enter phone number">
+    <input type="text" placeholder="Enter subject">
+    <textarea placeholder="Enter message" required></textarea>
+
+    <div class="submit-btn">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</section>
 
     <!-- Google Map -->
     <div data-aos="zoom-in" class="map">
@@ -222,6 +225,7 @@
       <div class="footer-section links">
         <h3>Quick Link</h3>
         <ul>
+            <li><a href="../index.html">Home</a></li>
           <li><a href="./product.html">Products</a></li>
           <li><a href="./about.html">Shop</a></li>
           <li><a href="./contact.html">Contact</a></li>
@@ -248,7 +252,7 @@
         <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
          <form action="./error.html" method="get">
           <input type="email" placeholder="info@example.com" required>
-           <input type="submit" value="Sign up" class="btn" />
+           <input type="submit" value="Submit" class="btn" />
         </form>
       </div>
     </div>
