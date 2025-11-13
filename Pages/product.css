@@ -1022,4 +1022,7 @@ color: rgb(204, 188, 188);
   .mb-logo{
     gap: 30px;
   }
+  .best-selling h2{
+    line-height: 40px;
+  }
 }}

@@ -148,25 +148,26 @@
     <div class="product-layout">
 
       <!-- Left thumbnails -->
-      <aside class="thumbs" aria-label="Product thumbnails">
-        <button  class="thumb active" aria-pressed="true">
-          <img data-aos="flip-left" src="../Images/smm1.webp" alt="chair thumb 1">
-        </button>
-        <button class="thumb" aria-pressed="false">
-          <img data-aos="flip-left" src="../Images/smm3.webp" alt="chair thumb 2">
-        </button>
-        <button class="thumb" aria-pressed="false">
-          <img data-aos="flip-left" src="../Images/smm4.webp" alt="chair thumb 3">
-        </button>
-        <button class="thumb" aria-pressed="false">
-          <img data-aos="flip-left" src="../Images/smm5.webp" alt="chair thumb 4">
-        </button>
-      </aside>
+    <aside class="thumbs" aria-label="Product thumbnails">
+  <button class="thumb active" aria-pressed="true">
+    <img data-aos="flip-left" src="../Images/smm1.webp" alt="chair thumb 1">
+  </button>
+  <button class="thumb" aria-pressed="false">
+    <img data-aos="flip-left" src="../Images/smm3.webp" alt="chair thumb 2">
+  </button>
+  <button class="thumb" aria-pressed="false">
+    <img data-aos="flip-left" src="../Images/smm4.webp" alt="chair thumb 3">
+  </button>
+  <button class="thumb" aria-pressed="false">
+    <img data-aos="flip-left" src="../Images/smm5.webp" alt="chair thumb 4">
+  </button>
+</aside>
 
-      <!-- Large product image -->
-      <figure class="product-media" aria-label="Main product image">
-        <img data-aos="zoom-in" src="../Images/c2.webp" alt="Avyanna occasional chair">
-      </figure>
+<!-- Large product image -->
+<figure class="product-media" aria-label="Main product image">
+  <img data-aos="zoom-in" src="../Images/c2.webp" alt="Avyanna occasional chair" id="mainImage">
+</figure>
+
 
       <!-- Product info / card -->
       <section class="product-card" aria-labelledby="product-name">
@@ -203,7 +204,10 @@
             <span class="visually-hidden">Quantity</span>
             <input type="number" min="1" value="1" />
           </label>
-          <a href="./error.html" class="btn add">ADD TO CART</a>
+        <div style="width: 100%;display: flex;flex-direction: column;">
+            <a href="./error.html" class="btn add">ADD TO CART</a> 
+          <a href="./error.html" class="btn add">Buy Now</a> 
+        </div>
         </div>
 
      
@@ -392,6 +396,31 @@
     </div>
   </footer>
 
+
+
+  <script>
+    const thumbs = document.querySelectorAll(".thumb");
+const mainImage = document.getElementById("mainImage");
+
+// Loop through all thumbnail buttons
+thumbs.forEach((thumb) => {
+  thumb.addEventListener("click", () => {
+    
+    // Remove active class from all thumbnails
+    thumbs.forEach(t => t.classList.remove("active"));
+    
+    // Add active class to clicked thumbnail
+    thumb.classList.add("active");
+
+    // Get clicked image src
+    const newSrc = thumb.querySelector("img").src;
+
+    // Change main image src
+    mainImage.src = newSrc;
+  });
+});
+
+  </script>
 
        <script>
       // $(document).on('ready', function () {

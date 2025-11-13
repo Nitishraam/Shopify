@@ -142,16 +142,17 @@
 
     
   <div class="product-container">
-    <div class="product-left">
-      <div  data-aos="zoom-in" class="main-image"></div>
-      <div class="thumbnail-row">
-        <img  data-aos="zoom-in"  src="../Images/sm1.webp" alt="thumb1">
-        <img data-aos="zoom-in"  src="../Images/sm2.webp" alt="thumb2">
-        <img  data-aos="zoom-in" src="../Images/sm3.webp" alt="thumb3">
-        <img data-aos="zoom-in"  src="../Images/sm4.webp" alt="thumb4">
-        <img data-aos="zoom-in"  src="../Images/sm5.webp" alt="thumb5">
-      </div>
-    </div>
+   <div class="product-left">
+  <div data-aos="zoom-in" class="main-image"></div>
+
+  <div class="thumbnail-row">
+    <img data-aos="zoom-in" src="../Images/sm1.webp" alt="thumb1">
+    <img data-aos="zoom-in" src="../Images/sm2.webp" alt="thumb2">
+    <img data-aos="zoom-in" src="../Images/sm3.webp" alt="thumb3">
+    <img data-aos="zoom-in" src="../Images/sm4.webp" alt="thumb4">
+    <img data-aos="zoom-in" src="../Images/sm5.webp" alt="thumb5">
+  </div>
+</div>
 
     <!-- Right side (product details) -->
     <div class="product-right">
@@ -494,6 +495,28 @@
 
 
 
+  <script>
+    const mainImage = document.querySelector(".main-image");
+const thumbs = document.querySelectorAll(".thumbnail-row img");
+
+// Set the first image as default main image
+mainImage.style.backgroundImage = `url(${thumbs[0].src})`;
+thumbs[0].classList.add("active");
+
+// When thumbnail clicked → update main image
+thumbs.forEach(img => {
+  img.addEventListener("click", () => {
+
+    // remove active from all
+    thumbs.forEach(t => t.classList.remove("active"));
+    img.classList.add("active");
+
+    // update main image
+    mainImage.style.backgroundImage = `url(${img.src})`;
+  });
+});
+
+  </script>
 
 
 

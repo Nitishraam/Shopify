@@ -294,7 +294,7 @@ nav {
       .card .media{ height: 220px; }
     }
     @media (max-width: 720px){
-      body{ padding:18px; }
+      
       h1.title{ font-size:30px; margin-bottom:10px; }
       .grid{ grid-template-columns: 1fr; gap:18px; }
       .card .media{ height: 200px; }
