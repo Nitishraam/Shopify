@@ -1160,3 +1160,14 @@ color: rgb(204, 188, 188);
     margin-left: 25px;
   }
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
