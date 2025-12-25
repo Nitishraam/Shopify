@@ -1,48 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stackly</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
-      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stackly</title>
 
-  </head>
-  <body>
-    <div class="mb">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- AOS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</head>
+<body>
+  <div class="mb">
       <div class="mb-main">
         <div class="menu-btn">
           <svg
@@ -64,17 +50,17 @@
           <div hidden id="menu">
             <ul class="menu-list">
               <li>
-                <a style="color: rgb(208, 176, 13)" href="./index.html">Home</a>
+                <a  href="./index.html">Home</a>
                 <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
                 <div id="menu2" hidden>
                   <a href="./Pages/home2.html">Home2</a>
                 </div>
               </li>
-              <li><a href="./Pages/about.html">Shop</a></li>
+              <li><a style="color: rgb(208, 176, 13)" href="./Pages/about.html">Shop</a></li>
               <li><a href="./Pages/product.html">Product</a></li>
               <li><a href="./Pages/blog.html">Blogs</a></li>
-              <li><a href="./Pages/contact.html">Contact</a></li>
-              <li><a href="./Pages/dashboard.html">Dashboard</a></li>
+               <li><a href="./Pages/contact.html">Contact</a></li>
+            <li><a href="./Pages/dashboard.html">Dashboard</a></li>
             </ul>
           </div>
         </div>
@@ -90,7 +76,7 @@
     </div>
     <nav id="nav" >
       <div class="main-menu">
-        <a href="./index.html" style="display: flex; align-items: center">
+        <a href="../index.html" style="display: flex; align-items: center">
           <img src="./Images/logo.png" alt="" />
         </a>
         <div class="menu-child">
@@ -119,7 +105,7 @@
                 </div>
               </li>
             </div>
-            <li><a href="./Pages/about.html">Shop</a></li>
+            <li><a  href="./Pages/about.html">Shop</a></li>
             <li><a href="./Pages/product.html">Product</a></li>
             <li><a href="./Pages/blog.html">Blogs</a></li>
             <li><a href="./Pages/contact.html">Contact</a></li>
@@ -132,361 +118,660 @@
         </div>
       </div>
     </nav>
-    <div>
-      <swiper-container
-        class="mySwiper"
-        navigation="true"
-        space-between="30"
-        centered-slides="true"
-        autoplay-delay="3500"
-        autoplay-disable-on-interaction="false"
-      >
-        <swiper-slide>
-          <section class="hero">
-            <div class="hero-content">
-              <p data-aos="zoom-in" class="subtitle">2025 Casual daily styles</p>
-              <h1 data-aos="zoom-in" class="h1">Summer<br />collection</h1>
-              <a href="./Pages/error.html"  data-aos="zoom-in" class="btn">Search More →</a>
-              
-            </div>
-            <div class="hero-image">
-              <img
-                src="./Images/sl1.webp"
-                alt="Model wearing summer clothes"
-              />
-              <!-- <h2 class="trend-text">trend</h2> -->
-            </div>
-          </section>
-        </swiper-slide>
-        <swiper-slide>
-           <section class="hero">
-            <div class="hero-content">
-              <p data-aos="zoom-in-right" class="subtitle"> Limited time offer</p>
-              <h1 data-aos="zoom-in-right" class="h1">Designed<br />collection</h1>
-              <a href="./Pages/error.html" data-aos="zoom-in-right" class="btn">Search More →</a>
-              
-            </div>
-            <div class="hero-image">
-              <img
-                src="./Images/sl2.webp"
-                alt="Model wearing summer clothes"
-              />
-              <!-- <h2 class="trend-text">trend</h2> -->
-            </div>
-          </section>
-        </swiper-slide>
-        <swiper-slide>
-          <section class="hero">
-            <div class="hero-content">
-              <p data-aos="zoom-in-right" class="subtitle">Off all new arrivals</p>
-              <h1 data-aos="zoom-in-right" class="h1">Definition<br />collection</h1>
-              <a href="./Pages/error.html" data-aos="zoom-in-right" class="btn">Search More →</a>
-            </div>
-            <div class="hero-image">
-              <img
-                src="./Images/sl3.webp"
-                alt="Model wearing summer clothes"
-              />
-              <!-- <h2 class="trend-text">trend</h2> -->
-            </div>
-          </section>
-        </swiper-slide>
-      </swiper-container>
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    </div>
+  <!-- HERO -->
+  <section class="hero-modern">
+    <swiper-container
+      class="hero-swiper"
+      navigation="true"
+      space-between="20"
+      centered-slides="true"
+      autoplay-delay="5000"
+      autoplay-disable-on-interaction="false"
+    >
+      <swiper-slide>
+        <div class="hero-slide hero-bg-1">
+          <div class="hero-content-modern" data-aos="fade-right">
+            <span class="hero-badge">2025 Casual Styles</span>
+            <h1 class="hero-title">
+              Summer<br /><span class="accent-text">Collection</span>
+            </h1>
+            <a href="./Pages/error.html" class="hero-btn primary-btn">
+              <span>Explore Now</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="hero-image-modern" data-aos="fade-left">
+            <img src="./Images/sl1.webp" alt="Summer collection" />
+          </div>
+        </div>
+      </swiper-slide>
 
-      <div id="client" class="slider">
-    
-      <div class="slide-track">
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-money-bill"></i>Best Price Guranted</h3>         
+      <swiper-slide>
+        <div class="hero-slide hero-bg-2">
+          <div class="hero-content-modern" data-aos="fade-right">
+            <span class="hero-badge">Limited Offer</span>
+            <h1 class="hero-title">
+              Designer<br /><span class="accent-text">Collection</span>
+            </h1>
+            <a href="./Pages/error.html" class="hero-btn primary-btn">
+              <span>Shop Now</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="hero-image-modern" data-aos="fade-left">
+            <img src="./Images/sl2.webp" alt="Designer collection" />
+          </div>
         </div>
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-headphones"></i>Online support 24 hr and 7 days</h3>         
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="hero-slide hero-bg-3">
+          <div class="hero-content-modern" data-aos="fade-right">
+            <span class="hero-badge">New Arrivals</span>
+            <h1 class="hero-title">
+              Premium<br /><span class="accent-text">Collection</span>
+            </h1>
+            <a href="./Pages/error.html" class="hero-btn primary-btn">
+              <span>Discover More</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="hero-image-modern" data-aos="fade-left">
+            <img src="./Images/sl3.webp" alt="Premium collection" />
+          </div>
         </div>
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-truck-fast"></i>Free shipping orders over $100</h3>         
+      </swiper-slide>
+    </swiper-container>
+  </section>
+
+  <!-- BRAND HIGHLIGHTS SECTION (HP1 Starting #1) -->
+<section class="brand-hero" data-aos="fade-up">
+  <div class="brand-container">
+    <div class="brand-features" data-aos="fade-up" data-aos-delay="100">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-shipping-fast"></i>
         </div>
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-rotate-left"></i>Free returns within 30 days</h3>         
+        <div>
+          <h4>Free Delivery</h4>
+          <p>Across India within 3-5 days</p>
         </div>
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-shield-halved"></i>100% Secure payment online</h3>         
-        </div>
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-money-bill"></i>Best Price Guranted</h3>         
-        </div>
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-headphones"></i>Online support 24 hr and 7 days</h3>         
-        </div>
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-truck-fast"></i>Free shipping orders over $100</h3>         
-        </div>
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-rotate-left"></i>Free returns within 30 days</h3>         
-        </div>
-        <div class="slide">
-          <h3 class="blue"><i class="fa-solid fa-shield-halved"></i>100% Secure payment online</h3>         
-        </div>
-       
       </div>
-    </div>
-<!-- 
-    <section class="categories">
-    <h2 data-aos="fade-up">Product Categories</h2>
-    <div class="category-container">
       
-      <div class="category-box">
-        <img  data-aos="flip-up" src="./Images/men.webp" alt="Men">
-        <h3  data-aos="fade-up">MEN</h3>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-undo-alt"></i>
+        </div>
+        <div>
+          <h4>Easy Returns</h4>
+          <p>30 days no questions asked</p>
+        </div>
       </div>
-
-      <div class="category-box">
-        <img  data-aos="flip-up" src="./Images/women.webp" alt="Women">
-        <h3  data-aos="fade-up">WOMEN</h3>
+      
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div>
+          <h4>Quality Guaranteed</h4>
+          <p>Premium materials only</p>
+        </div>
       </div>
-
-      <div class="category-box">
-        <img  data-aos="flip-up" src="./Images/kid.webp" alt="Kids">
-        <h3  data-aos="fade-up">KIDS</h3>
+      
+      <div class="feature-item">
+        <div class="feature-icon">
+          <i class="fas fa-headset"></i>
+        </div>
+        <div>
+          <h4>24/7 Support</h4>
+          <p>Expert advice available</p>
+        </div>
       </div>
-
-      <div class="category-box">
-        <img  data-aos="flip-up" src="./Images/p1.webp" alt="Shoes">
-        <h3  data-aos="fade-up">SHOES</h3>
+    </div>
+    
+    <div class="brand-trust" data-aos="zoom-in" data-aos-delay="200">
+      <div class="trust-stats">
+        <div class="trust-stat">
+          <span class="stat-big">12</span>
+          <span class="stat-small">Years Experience</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-stat">
+          <span class="stat-big">500+</span>
+          <span class="stat-small">Showrooms</span>
+        </div>
+        <div class="trust-divider"></div>
+        <div class="trust-stat">
+          <span class="stat-big">4.9</span>
+          <span class="stat-small">★ Rating</span>
+        </div>
       </div>
-
-      <div class="category-box">
-        <img  data-aos="flip-up" src="./Images/bag.webp" alt="Bags">
-        <h3  data-aos="fade-up">BAGS</h3>
+      <a href="./Pages/error.html" class="brand-cta">Learn Our Story</a>
+    </div>
+  </div>
+</section>
+<!-- VIDEO HERO SECTION (HP1 Starting #2) -->
+<section class="video-hero" data-aos="fade-up">
+  <div class="video-container">
+    <!-- Video background (use your sofa video or image) -->
+    <div class="video-bg">
+      <video autoplay muted loop playsinline class="video-player">
+        <source src="../Videos/sofa-showroom.mp4" type="video/mp4">
+        <img src="../Images/sf1.webp" alt="Premium furniture showcase" class="video-fallback">
+      </video>
+    </div>
+    
+    <!-- Overlay content -->
+    <div class="video-overlay">
+      <div class="video-content" data-aos="zoom-in">
+        <div class="promo-badge">🔥 Flash Sale</div>
+        <h2>Up to 40% OFF</h2>
+        <p>Premium furniture collection. Limited stock available!</p>
+        <div class="video-prices">
+          <span class="video-from">From</span>
+          <span class="video-price">Rs. 2,999</span>
+        </div>
+        <div class="video-countdown">
+          <div class="countdown-item">
+            <span class="countdown-num">03</span>
+            <span>Days</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-num">12</span>
+            <span>Hours</span>
+          </div>
+          <div class="countdown-item">
+            <span class="countdown-num">45</span>
+            <span>Mins</span>
+          </div>
+        </div>
+        <a href="./Pages/error.html" class="video-btn">Shop Sale Now</a>
       </div>
+    </div>
+  </div>
+</section>
 
-      <div class="category-box">
-        <img  data-aos="flip-up" src="./Images/acess.webp" alt="Accessories">
-        <h3  data-aos="fade-up">ACCESSORIES</h3>
+  <!-- FEATURES STRIP -->
+  <!-- <section class="features-section" data-aos="fade-up">
+    <div class="features-container">
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-money-bill-wave"></i></div>
+        <h3>Best Prices</h3>
+        <p>Guaranteed lowest prices.</p>
       </div>
-
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-headset"></i></div>
+        <h3>24/7 Support</h3>
+        <p>We are always here to help.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
+        <h3>Free Shipping</h3>
+        <p>Orders over $100.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-rotate-left"></i></div>
+        <h3>Easy Returns</h3>
+        <p>30 days return policy.</p>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Secure Payment</h3>
+        <p>100% payment protection.</p>
+      </div>
     </div>
   </section> -->
 
-   <section class="best-selling">
-    <h2  data-aos="fade-up">Best Selling</h2>
+  <!-- BEST SELLING -->
+  <section class="products-section" data-aos="fade-up">
+    <div class="section-header">
+      <h2 class="section-title">Best Selling</h2>
+    </div>
 
-    <div class="product-grid">
-
-      <!-- Product Card -->
-      <div id="p10" data-aos="flip-left" class="product-card">
-        <div class="image-container">
-          <img  data-aos="zoom-in" src="./Images/t1.webp" class="main-img" alt="Men Formal T-shirt">
-          <img  src="./Images/ts1.1.webp" class="hover-img" alt="Men Formal T-shirt Hover">
-          <div class="icons">
-            <a href="./Pages/error.html" data-aos="fade-up" class="icon-btn">❤️</a>
-            <a href="./Pages/error.html"  data-aos="fade-up" class="icon-btn">🛒</a>
+    <div class="products-grid">
+      <!-- T-Shirt -->
+      <article class="product-card-modern" id="p10" data-aos="flip-left">
+        <div class="product-media">
+          <img src="./Images/t1.webp" class="main-image" alt="W. Men Formal T-shirt" />
+          <img src="./Images/ts1.1.webp" class="hover-image" alt="W. Men Formal T-shirt hover" />
+          <div class="product-overlay">
+            <a href="./Pages/error.html" class="action-button"><i class="far fa-heart"></i></a>
+            <a href="./Pages/error.html" class="action-button"><i class="fas fa-eye"></i></a>
+            <a href="./Pages/error.html" class="action-button cart-button"><i class="fas fa-cart-plus"></i></a>
           </div>
         </div>
-        <h3 data-aos="fade-up">W. Men Formal T-shirt</h3>
-        <p data-aos="fade-up" class="price">Rs.450.00</p>
-        <div data-aos="fade-up" class="sizess">
-          <a href="./Pages/error.html">M</a>
-          <a href="./Pages/error.html">L</a>
-          <a href="./Pages/error.html">XL</a>
-        </div>
-        <div>
-          <a  data-aos="fade-up" class="cart" href="./Pages/error.html">ADD TO CART</a>
-          <a  data-aos="fade-up" class="cart" href="./Pages/error.html">BUY</a>
-        </div>
-      </div>
-
-      <div id="p2"  data-aos="flip-left"  class="product-card">
-        <div class="image-container">
-          <img data-aos="zoom-in" src="./Images/sh1.webp"  class="main-img" alt="Blue Shoes">
-          <img src="./Images/sh1.1.webp"  class="hover-img" alt="Blue Shoes Hover">
-          <div class="icons">
-           <a href="./Pages/error.html" data-aos="fade-up" class="icon-btn">❤️</a>
-            <a href="./Pages/error.html"  data-aos="fade-up" class="icon-btn">🛒</a>
+        <div class="product-content">
+          <h3>W. Men Formal T-shirt</h3>
+          <div class="product-price">
+            <span class="current-price">Rs. 450</span>
+            <span class="old-price">Rs. 650</span>
+          </div>
+          <div class="product-sizes">
+            <a href="./Pages/error.html" class="size-btn">M</a>
+            <a href="./Pages/error.html" class="size-btn active">L</a>
+            <a href="./Pages/error.html" class="size-btn">XL</a>
+          </div>
+          <div class="product-buttons">
+            <a href="./Pages/error.html" class="add-to-cart-btn primary-btn">Add to Cart</a>
+            <a href="./Pages/error.html" class="buy-now-btn secondary-btn">Buy Now</a>
           </div>
         </div>
-        <h3 data-aos="fade-up">B. Pair of Shoes</h3>
-        <p data-aos="fade-up" class="price">RS.960.00</p>
-        <div data-aos="fade-up" class="sizess">
-           <a href="./Pages/error.html">M</a>
-          <a href="./Pages/error.html">L</a>
-          <a href="./Pages/error.html">XL</a>
-        </div>
-         <div>
-          <a  data-aos="fade-up" class="cart" href="./Pages/error.html">ADD TO CART</a>
-          <a  data-aos="fade-up" class="cart" href="./Pages/error.html">BUY</a>
-        </div>
-      </div>
+      </article>
 
-      <div id="p3"  data-aos="flip-left"  class="product-card">
-        <div class="image-container">
-          <img data-aos="zoom-in" src="./Images/w1.webp" class="main-img" alt="Smart Watch">
-          <img  src="./Images/w1.1.webp" class="hover-img" alt="Smart Watch Hover">
-          <div class="icons">
-           <a href="./Pages/error.html" data-aos="fade-up" class="icon-btn">❤️</a>
-            <a href="./Pages/error.html"  data-aos="fade-up" class="icon-btn">🛒</a>
+      <!-- Shoes (sizes fixed to M/L/XL for consistency) -->
+      <article class="product-card-modern" id="p2" data-aos="flip-left" data-aos-delay="100">
+        <div class="product-media">
+          <img src="./Images/sh1.webp" class="main-image" alt="B. Pair of Shoes" />
+          <img src="./Images/sh1.1.webp" class="hover-image" alt="B. Pair of Shoes hover" />
+          <div class="product-overlay">
+            <a href="./Pages/error.html" class="action-button"><i class="far fa-heart"></i></a>
+            <a href="./Pages/error.html" class="action-button"><i class="fas fa-eye"></i></a>
+            <a href="./Pages/error.html" class="action-button cart-button"><i class="fas fa-cart-plus"></i></a>
           </div>
         </div>
-        <h3 data-aos="fade-up">F. Ultimate Smart Watch</h3>
-        <p data-aos="fade-up" class="price">RS.570.00</p>
-        <div data-aos="fade-up" class="sizess">
-           <a href="./Pages/error.html">M</a>
-          <a href="./Pages/error.html">L</a>
-          <a href="./Pages/error.html">XL</a>
-        </div>
-         <div>
-          <a  data-aos="fade-up" class="cart" href="./Pages/error.html">ADD TO CART</a>
-          <a   data-aos="fade-up" class="cart" href="./Pages/error.html">BUY</a>
-        </div>
-      </div>
-
-      <div id="p4"  data-aos="flip-left"  class="product-card">
-        <div class="image-container">
-          <img data-aos="zoom-in" src="./Images/j1.webp" class="main-img" alt="Mokmol Jacket">
-          <img src="./Images/j1.1.webp" class="hover-img" alt="Mokmol Jacket Hover">
-          <div class="icons">
-
-            <a href="./Pages/error.html" data-aos="fade-up" class="icon-btn">❤️</a>
-            <a href="./Pages/error.html"  data-aos="fade-up" class="icon-btn">🛒</a>
+        <div class="product-content">
+          <h3>B. Pair of Shoes</h3>
+          <div class="product-price">
+            <span class="current-price">Rs. 960</span>
+          </div>
+          <div class="product-sizes">
+            <a href="./Pages/error.html" class="size-btn">M</a>
+            <a href="./Pages/error.html" class="size-btn active">L</a>
+            <a href="./Pages/error.html" class="size-btn">XL</a>
+          </div>
+          <div class="product-buttons">
+            <a href="./Pages/error.html" class="add-to-cart-btn primary-btn">Add to Cart</a>
+            <a href="./Pages/error.html" class="buy-now-btn secondary-btn">Buy Now</a>
           </div>
         </div>
-        <h3 data-aos="fade-up">S. Mokmol Jacket</h3>
-        <p data-aos="fade-up" class="price">RS.740.00</p>
-        <div data-aos="fade-up" class="sizess">
-           <a href="./Pages/error.html">M</a>
-          <a href="./Pages/error.html">L</a>
-          <a href="./Pages/error.html">XL</a>
-        </div>
-         <div>
-          <a  data-aos="fade-up" class="cart" href="./Pages/error.html">ADD TO CART</a>
-          <a  data-aos="fade-up" class="cart" href="./Pages/error.html">BUY</a>
-        </div>
-      </div>
+      </article>
 
+      <!-- Watch -->
+      <article class="product-card-modern" id="p3" data-aos="flip-left" data-aos-delay="200">
+        <div class="product-media">
+          <img src="./Images/w1.webp" class="main-image" alt="F. Ultimate Smart Watch" />
+          <img src="./Images/w1.1.webp" class="hover-image" alt="F. Ultimate Smart Watch hover" />
+          <div class="product-overlay">
+            <a href="./Pages/error.html" class="action-button"><i class="far fa-heart"></i></a>
+            <a href="./Pages/error.html" class="action-button"><i class="fas fa-eye"></i></a>
+            <a href="./Pages/error.html" class="action-button cart-button"><i class="fas fa-cart-plus"></i></a>
+          </div>
+        </div>
+        <div class="product-content">
+          <h3>F. Ultimate Smart Watch</h3>
+          <div class="product-price">
+            <span class="current-price">Rs. 570</span>
+          </div>
+           <div class="product-sizes">
+            <a href="./Pages/error.html" class="size-btn">s</a>
+            <a href="./Pages/error.html" class="size-btn active">L</a>
+            <!-- <a href="./Pages/error.html" class="size-btn">XL</a> -->
+          </div>
+          <div class="product-buttons">
+            <a href="./Pages/error.html" class="add-to-cart-btn primary-btn">Add to Cart</a>
+            <a href="./Pages/error.html" class="buy-now-btn secondary-btn">Buy Now</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Jacket -->
+      <article class="product-card-modern" id="p4" data-aos="flip-left" data-aos-delay="300">
+        <div class="product-media">
+          <img src="./Images/j1.webp" class="main-image" alt="S. Mokmol Jacket" />
+          <img src="./Images/j1.1.webp" class="hover-image" alt="S. Mokmol Jacket hover" />
+          <div class="product-overlay">
+            <a href="./Pages/error.html" class="action-button"><i class="far fa-heart"></i></a>
+            <a href="./Pages/error.html" class="action-button"><i class="fas fa-eye"></i></a>
+            <a href="./Pages/error.html" class="action-button cart-button"><i class="fas fa-cart-plus"></i></a>
+          </div>
+        </div>
+        <div class="product-content">
+          <h3>S. Mokmol Jacket</h3>
+          <div class="product-price">
+            <span class="current-price">Rs. 740</span>
+            <span class="old-price">Rs. 950</span>
+          </div>
+          <div class="product-sizes">
+            <a href="./Pages/error.html" class="size-btn">M</a>
+            <a href="./Pages/error.html" class="size-btn active">L</a>
+            <a href="./Pages/error.html" class="size-btn">XL</a>
+          </div>
+          <div class="product-buttons">
+            <a href="./Pages/error.html" class="add-to-cart-btn primary-btn">Add to Cart</a>
+            <a href="./Pages/error.html" class="buy-now-btn secondary-btn">Buy Now</a>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
-    <div  data-aos="fade-up"  style="margin-top: 70px;width: 100%;text-align: center;  background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
-  background-clip: text;
-  color: transparent;
-  text-transform: uppercase;">
-      <h1>Now on Trend</h1>
-    </div>
-  <section class="container">
   
-    <div  data-aos="zoom-in"  class="left-section">
-      <div class="image-box">
-        <img src="./Images/look.webp" alt="Model wearing jacket" class="main-img">
-        <div class="overlay-buttons">
-          <button class="like-btn">♥</button>
-          <button class="cart-btn">🛒</button>
-        </div>
+<!-- FEATURED COLLECTIONS (HP1 Center Section 1) -->
+<!-- <section class="featured-collections-hp1" data-aos="fade-up">
+  <div class="section-header-hp1">
+    <h2>Featured Collections</h2>
+    <p>Discover our premium furniture ranges</p>
+  </div>
+
+  <div class="collections-grid">
+    <article class="collection-card" data-aos="zoom-in">
+      <div class="collection-image">
+        <img src="../Images/living-collection.webp" alt="Living Room Collection" />
       </div>
-      <p class="vertical-text">trendy looks</p>
+      <div class="collection-content">
+        <h3>Living Room</h3>
+        <span class="collection-badge">20% OFF</span>
+        <p>Complete your space with style</p>
+        <a href="./shop.html#living" class="collection-link">Shop Collection</a>
+      </div>
+    </article>
+
+    <article class="collection-card" data-aos="zoom-in" data-aos-delay="100">
+      <div class="collection-image">
+        <img src="../Images/dining-collection.webp" alt="Dining Collection" />
+      </div>
+      <div class="collection-content">
+        <h3>Dining Room</h3>
+        <span class="collection-badge">New Arrival</span>
+        <p>Elegant dining solutions</p>
+        <a href="./shop.html#dining" class="collection-link">Shop Collection</a>
+      </div>
+    </article>
+
+    <article class="collection-card" data-aos="zoom-in" data-aos-delay="200">
+      <div class="collection-image">
+        <img src="../Images/bedroom-collection.webp" alt="Bedroom Collection" />
+      </div>
+      <div class="collection-content">
+        <h3>Bedroom</h3>
+        <span class="collection-badge">Best Seller</span>
+        <p>Comfort meets luxury</p>
+        <a href="./shop.html#bedroom" class="collection-link">Shop Collection</a>
+      </div>
+    </article>
+  </div>
+</section> -->
+
+<!-- TOP BRANDS SECTION (HP1 - NO IMAGES) -->
+<section class="brands-section" data-aos="fade-up">
+  <div class="section-header-hp1">
+    <h2>Trusted by Leading Brands</h2>
+    <p>Partnered with India's top furniture craftsmanship leaders</p>
+  </div>
+
+  <div class="brands-slider">
+    <div class="brands-track">
+      <!-- Brand names with colors - repeat for infinite scroll -->
+      <div class="brand-name-badge godrej">
+        <span>Godrej Interio</span>
+      </div>
+      <div class="brand-name-badge ikea">
+        <span>IKEA</span>
+      </div>
+      <div class="brand-name-badge durian">
+        <span>Durian</span>
+      </div>
+      <div class="brand-name-badge urban">
+        <span>Urban Ladder</span>
+      </div>
+      <div class="brand-name-badge pepperfry">
+        <span>Pepperfry</span>
+      </div>
+      <div class="brand-name-badge woodenstreet">
+        <span>WoodenStreet</span>
+      </div>
+      
+      <!-- Duplicate for seamless loop -->
+      <div class="brand-name-badge godrej">
+        <span>Godrej Interio</span>
+      </div>
+      <div class="brand-name-badge ikea">
+        <span>IKEA</span>
+      </div>
+      <div class="brand-name-badge durian">
+        <span>Durian</span>
+      </div>
+      <div class="brand-name-badge urban">
+        <span>Urban Ladder</span>
+      </div>
+      <div class="brand-name-badge pepperfry">
+        <span>Pepperfry</span>
+      </div>
+      <div class="brand-name-badge woodenstreet">
+        <span>WoodenStreet</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="brands-cta" data-aos="zoom-in" data-aos-delay="200">
+    <h3>Ready to transform your home?</h3>
+    <a href="./Pages/error.html" class="cta-btn-gold">Explore Premium Collection</a>
+  </div>
+</section>
+
+
+
+
+
+<!-- WHY CHOOSE US (HP1 Center Section 2) -->
+<section class="why-us-hp1" data-aos="fade-up">
+  <div class="section-header-hp1">
+    <h2>Why Choose Stackly?</h2>
+    <p>Premium quality at unbeatable prices</p>
+  </div>
+
+  <div class="why-grid">
+    <div class="why-item" data-aos="fade-right">
+      <div class="why-icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <h3>Premium Craftsmanship</h3>
+      <p>Handcrafted by skilled artisans using the finest materials</p>
     </div>
 
-    <div  data-aos="flip-left"  class="right-section">
-      <div id="p5" class="product-card">
-        <div class="img-wrapper">
-          <img src="./Images/j2.webp" alt="Collared Jacket" class="product-img main">
-          <img src="./Images/j2.2.webp" alt="Collared Jacket Hover" class="product-img hover">
-          <!-- <span class="new-item">New item</span> -->
+    <div class="why-item" data-aos="fade-up">
+      <div class="why-icon">
+        <i class="fas fa-truck"></i>
+      </div>
+      <h3>Free Nationwide Delivery</h3>
+      <p>Delivered to your door within 3-5 business days</p>
+    </div>
+
+    <div class="why-item" data-aos="fade-left">
+      <div class="why-icon">
+        <i class="fas fa-shield-alt"></i>
+      </div>
+      <h3>5-Year Warranty</h3>
+      <p>Peace of mind with our industry-leading warranty</p>
+    </div>
+  </div>
+
+  <div class="why-stats">
+    <div class="stat-box">
+      <span class="stat-number">25K+</span>
+      <span class="stat-label">Happy Customers</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">1K+</span>
+      <span class="stat-label">Products Sold</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-number">4.9</span>
+      <span class="stat-label">★ Average Rating</span>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FEATURED CATEGORIES -->
+<section class="categories-section" data-aos="fade-up">
+  <div class="section-header">
+    <h2 class="section-title">Shop by Category</h2>
+  </div>
+
+  <div class="categories-grid">
+    <article class="category-card" data-aos="zoom-in" data-aos-delay="0">
+      <div class="category-media">
+        <img src="./Images/bl7.webp" alt="Men's Fashion" />
+      </div>
+      <div class="category-content">
+        <h3>Men's Fashion</h3>
+        <p>Casual, formal and street wear styles.</p>
+        <a href="./Pages/error.html" class="category-link">Shop now</a>
+      </div>
+    </article>
+
+    <article class="category-card" data-aos="zoom-in" data-aos-delay="100">
+      <div class="category-media">
+        <img src="./Images/sh2.2.webp" alt="Shoes" />
+      </div>
+      <div class="category-content">
+        <h3>Footwear</h3>
+        <p>Sneakers, formals and everyday comfort.</p>
+        <a href="./Pages/product.html" class="category-link">Shop now</a>
+      </div>
+    </article>
+
+    <article class="category-card" data-aos="zoom-in" data-aos-delay="200">
+      <div class="category-media">
+        <img src="./Images/acess.webp" alt="Accessories" />
+      </div>
+      <div class="category-content">
+        <h3>Accessories</h3>
+        <p>Watches, belts and daily essentials.</p>
+        <a href="./Pages/product.html" class="category-link">Shop now</a>
+      </div>
+    </article>
+
+    <article class="category-card" data-aos="zoom-in" data-aos-delay="300">
+      <div class="category-media">
+        <img src="./Images/bl9.webp" alt="Sale" />
+      </div>
+      <div class="category-content">
+        <h3>On Sale</h3>
+        <p>Best picks with heavy discounts.</p>
+        <a href="./Pages/product.html" class="category-link">Shop now</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+  <!-- FEATURED PRODUCT -->
+  <section class="featured-section" data-aos="fade-up">
+    <div class="featured-container">
+      <div class="featured-image-side" data-aos="zoom-in">
+        <div class="featured-media">
+          <img src="./Images/look.webp" alt="Collared jacket look" />
+          <div class="media-overlay">
+            <a href="./Pages/error.html" class="overlay-action"><i class="far fa-heart"></i></a>
+            <a href="./Pages/error.html" class="overlay-action"><i class="fas fa-cart-plus"></i></a>
+          </div>
         </div>
-        <h2  data-aos="fade-up" class="product-name">Collared jacket</h2>
-        <div class="price">
-          <span  data-aos="fade-up" class="new-price">Rs. 2,000.00</span>
-          <span  data-aos="fade-up" class="old-price">Rs. 5,500.00</span>
+        <div class="trend-label">TRENDING LOOKS</div>
+      </div>
+
+      <div class="featured-content-side" id="p5" data-aos="fade-left">
+        <h2 class="featured-title accent-text">Collared Jacket</h2>
+        <div class="featured-pricing">
+          <span class="sale-price">Rs. 2,000</span>
+          <span class="regular-price">Rs. 5,500</span>
         </div>
-        <div  data-aos="fade-up" class="sizes">
-          <a href="./Pages/error.html">M</a>
-          <a href="./Pages/error.html">L</a>
-          <a href="./Pages/error.html">XL</a> 
+        <div class="featured-sizes">
+          <a href="./Pages/error.html" class="size-btn featured-size">M</a>
+          <a href="./Pages/error.html" class="size-btn featured-size active">L</a>
+          <a href="./Pages/error.html" class="size-btn featured-size">XL</a>
         </div>
-          <div>
-          <a  data-aos="fade-up" class="cart" href="./Pages/error.html">ADD TO CART</a>
-          <a  data-aos="fade-up" class="cart" href="./Pages/error.html">BUY</a>
+        <div class="featured-actions">
+          <a href="./Pages/error.html" class="primary-btn add-cart-featured">Add to Cart</a>
+          <a href="./Pages/error.html" class="secondary-btn buy-now-featured">Buy Now</a>
         </div>
       </div>
     </div>
   </section>
 
-
- <section class="blog-section">
-    <h2  data-aos="fade-up"  class="section-title">Latest Blog</h2>
-
-    <div class="blog-container">
-      <div  id="b1" data-aos="flip-left"  class="blog-card">
-        <img  data-aos="zoom-in"  src="./Images/jw1.webp" alt="Blog 1">
-        <div class="blog-info">
-          <p  data-aos="fade-up"  class="date"><i class="far fa-calendar"></i> January 19, 2025</p>
-          <h3  data-aos="fade-up"  class="blog-title">
-            A Glimpse into Men,s Fashion Trends: What's Hot and What's Not
-          </h3>
-          <a  data-aos="fade-up"  href="./Pages/blog.html" class="read-more">Read More</a>
-        </div>
-      </div>
-
-      <div id="b2" data-aos="flip-left" class="blog-card">
-        <img  data-aos="zoom-in"   src="./Images/s1.webp" alt="Blog 2">
-        <div class="blog-info">
-          <p  data-aos="fade-up"  class="date"><i class="far fa-calendar"></i> January 19, 2025</p>
-          <h3  data-aos="fade-up"  class="blog-title">
-            Decoding Men's Style: What's Trending and What's Fading
-          </h3>
-          <a  data-aos="fade-up"  href="./Pages/blog.html" class="read-more">Read More</a>
-        </div>
-      </div>
-
-      <div id="b3" data-aos="flip-left"  class="blog-card">
-        <img  data-aos="zoom-in"  src="./Images/h1.webp" alt="Blog 3">
-        <div class="blog-info">
-          <p  data-aos="fade-up"  class="date"><i class="far fa-calendar"></i> January 19, 2025</p>
-          <h3  data-aos="fade-up"  class="blog-title">
-            Elevating Your Awesome Look: Men's Fashion Hits and Misses The World
-          </h3>
-          <a  data-aos="fade-up"  href="./Pages/blog.html" class="read-more">Read More</a>
-        </div>
-      </div>
+  <!-- BLOGS -->
+  <section class="blog-section-modern" data-aos="fade-up">
+    <div class="section-header">
+      <h2 class="section-title">Latest Blogs</h2>
     </div>
+    <div class="blog-grid">
+      <article class="blog-card-modern" id="b1" data-aos="flip-left">
+        <div class="blog-media">
+          <img src="./Images/jw1.webp" alt="Blog 1" />
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <i class="far fa-calendar"></i><span>January 19, 2025</span>
+          </div>
+          <h3>Men's Fashion: What's Hot</h3>
+          <a href="./Pages/error.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
 
+      <article class="blog-card-modern" id="b2" data-aos="flip-left" data-aos-delay="100">
+        <div class="blog-media">
+          <img src="./Images/s1.webp" alt="Blog 2" />
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <i class="far fa-calendar"></i><span>January 19, 2025</span>
+          </div>
+          <h3>Decoding Men's Style</h3>
+          <a href="./Pages/error.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
 
-    <div class="features">
-      <div  data-aos="zoom-in"  class="feature-item">
+      <article class="blog-card-modern" id="b3" data-aos="flip-left" data-aos-delay="200">
+        <div class="blog-media">
+          <img src="./Images/h1.webp" alt="Blog 3" />
+        </div>
+        <div class="blog-content">
+          <div class="blog-meta">
+            <i class="far fa-calendar"></i><span>January 19, 2025</span>
+          </div>
+          <h3>Elevate Your Look</h3>
+          <a href="./Pages/error.html" class="blog-readmore">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section-final" data-aos="fade-up">
+    <div class="services-grid-final">
+      <div class="service-card-final" data-aos="zoom-in" data-aos-delay="0">
         <i class="fas fa-truck"></i>
-        <h4>Free Shipping</h4>
+        <h3>Free Shipping</h3>
         <p>On orders over <strong>$99</strong>.</p>
       </div>
-
-      <div  data-aos="zoom-in" class="feature-item">
+      <div class="service-card-final" data-aos="zoom-in" data-aos-delay="100">
         <i class="fas fa-money-bill-wave"></i>
-        <h4>Money Back</h4>
-        <p>Money back in 15 days.</p>
+        <h3>Money Back</h3>
+        <p>15 days guarantee.</p>
       </div>
-
-      <div  data-aos="zoom-in" class="feature-item">
-        <i class="fas fa-credit-card"></i>
-        <h4>Secure Checkout</h4>
-        <p>100% Payment Secure.</p>
+      <div class="service-card-final" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Secure Checkout</h3>
+        <p>100% payment secure.</p>
       </div>
-
-      <div  data-aos="zoom-in" class="feature-item">
+      <div class="service-card-final" data-aos="zoom-in" data-aos-delay="300">
         <i class="fas fa-headset"></i>
-        <h4>Online Support</h4>
-        <p>Ensure the product quality.</p>
+        <h3>Online Support</h3>
+        <p>24/7 customer support.</p>
       </div>
     </div>
   </section>
 
-   <footer id="footer"  data-aos="zoom-in" class="footer">
+  <!-- FOOTER -->
+  <footer id="footer" class="footer" data-aos="zoom-in">
     <div class="footer-container">
-      
-      <!-- About Us -->
       <div class="footer-section about">
         <h3>About Us.</h3>
         <p>
-          Minimal E-Commerce is a dynamic and innovative online retail platform that offers a wide range of products to customers worldwide.
+          Minimal E-Commerce is a dynamic and innovative online retail platform
+          that offers a wide range of products to customers worldwide.
         </p>
 
         <div class="social-icons">
@@ -499,16 +784,15 @@
 
         <p class="safe-checkout">Guaranteed safe checkout</p>
         <div class="payment-icons">
-          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__1.svg" alt="Amazon Pay">
-          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__4.svg" alt="Apple Pay">
-          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__4.svg" alt="Google Pay">
+          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__1.svg" alt="Amazon Pay" />
+          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__4.svg" alt="Apple Pay" />
+          <img src="https://marinothemes.com/wp/minimalin/wp-content/uploads/2025/01/footer__4.svg" alt="Google Pay" />
         </div>
       </div>
 
-      <!-- Quick Links -->
       <div class="footer-section links">
         <h3>Quick Link</h3>
-        <ul>      
+        <ul>
           <li><a href="./index.html">Home</a></li>
           <li><a href="./Pages/product.html">Products</a></li>
           <li><a href="./Pages/about.html">Shop</a></li>
@@ -518,7 +802,6 @@
         </ul>
       </div>
 
-      <!-- Information -->
       <div class="footer-section links">
         <h3>Information</h3>
         <ul>
@@ -529,179 +812,59 @@
           <li><a href="./Pages/about.html">Jewelry</a></li>
         </ul>
       </div>
-      
 
-      <!-- Newsletter -->
       <div class="footer-section newsletter">
         <h3>Newsletter</h3>
         <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
         <form action="./Pages/error.html" method="get">
-          <input type="email" placeholder="info@example.com" required>
-           <input type="submit" value="Submit" class="btn" />
+          <input type="email" placeholder="info@example.com" required />
+          <input type="submit" value="Submit" class="footer-btn" />
         </form>
       </div>
     </div>
-      <div class=" office-worldwide">
-          <h3 class="footer-title">Location</h3>
 
-          <div class="map-container">
-            <iframe class="map1"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
-              width="100%"
-              height="150"
-              style="border: 0,"
-              allowfullscreen=""
-              loading="lazy"
-              
-            >
-            </iframe>
-          </div>
-        </div>
+    <div class="office-worldwide">
+      <h3 class="footer-title">Location</h3>
+      <div class="map-container">
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0;"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
 
     <div class="footer-bottom">
       <p>© 2025 All rights reserved.</p>
     </div>
   </footer>
 
-
-
-
-
-
-<script>
-VANTA.WAVES({
-  el: "#p10",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x221d11
-})
-</script>
-<script>
-VANTA.WAVES({
-  el: "#p2",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x221d11
-})
-</script>
-<script>
-VANTA.WAVES({
-  el: "#p3",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x221d11
-})
-</script>
-<script>
-VANTA.WAVES({
-  el: "#p4",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x221d11
-})
-</script>
-<script>
-VANTA.WAVES({
-  el: "#p5",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x221d11
-})
-</script>
-<script>
-VANTA.WAVES({
-  el: "#b1",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x3d4859
-})
-</script>
-<script>
-VANTA.WAVES({
-  el: "#b2",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x3d4859
-})
-</script>
-<script>
-VANTA.WAVES({
-  el: "#b3",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0x3d4859
-})
-</script>
-
+  <!-- AOS -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   <script>
-VANTA.DOTS({
-  el: "#client",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  scale: 1.00,
-  scaleMobile: 1.00,
-  color: 0xd2c611,
-  showLines: false
-})
-</script>
+    AOS.init({
+      duration: 800,
+      once: false,
+      offset: 100,
+    });
 
-
-
-
- <script>
-      // $(document).on('ready', function () {
-      // initialization of aos
-      AOS.init({
-        duration: 650,
-        once: false,
-        mirror: true,
+    // Size selection (visual only)
+    document.querySelectorAll('.product-sizes, .featured-sizes').forEach(group => {
+      group.addEventListener('click', e => {
+        if (!e.target.classList.contains('size-btn')) return;
+        e.preventDefault();
+        group.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
       });
-    </script>
-
-     
-
-  </body>
+    });
+  </script>
+</body>
 </html>
